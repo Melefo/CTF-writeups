@@ -15,12 +15,12 @@ This 24-hour CTF has 30 challenges, and it is the first stage of "CTF Internacio
 |[You are not allowed](#you-are-not-allowed)| Reverse Engineering | 100 | ✔️ | ✔️ | ✔️ |
 |[Well hello there](#well-hello-there)| Pwn | 100 | ✔️ | ✔️ | ❌ |
 |[Welcome to Lisbon!](#welcome-to-lisbon) | OSINT | 100 | ✔️ | ✔️ | ✔️ |
-|[Hiding in plain sight](#hiding-in-plain-sight) | Forensics | 100 | ✔️ |  |  |
-|[Welcome to the challenge](#welcome-to-the-challenge) | Forensics | 100 | ✔️ |  |  |
-|[About us](#about-us) | Forensics | 100 | ✔️ |  |  |
-|[Keyp it universal](#keyp-it-universal) | Forensics | 100 | ✔️ |  |  |
-|[Maybe the helper can help](#maybe-the-helper-can-help) | Forensics | 100 | ❌ |  |  |
-|[Where did agent rooot login from](#Where-did-agent-rooot-login-from) | Forensics | 449 | ❌ |  |  |
+|[Hiding in plain sight](#hiding-in-plain-sight) | Forensics | 100 | ✔️ | ✔️ | ✔️ |
+|[Welcome to the challenge](#welcome-to-the-challenge) | Forensics | 100 | ✔️ | ✔️ | ✔️ |
+|[About us](#about-us) | Forensics | 100 | ✔️ | ✔️ | ✔️ |
+|[Keyp it universal](#keyp-it-universal) | Forensics | 100 | ✔️ | ✔️ | ✔️ |
+|[Maybe the helper can help](#maybe-the-helper-can-help) | Forensics | 100 | ❌ | ✔️ | ✔️ |
+|[Where did agent rooot login from](#Where-did-agent-rooot-login-from) | Forensics | 449 | ❌ | ❌ | ❌ |
 |[Knock Knock](#knock-knock) | Network | 100 | ✔️ |  |  |
 |[The lost Jetson](#the-lost-jetson) | Network | 400 | ✔️ |  |  |
 |[Vacation time!](#vacation-time) | Network | 464 | ✔️ |  |  |
@@ -54,7 +54,7 @@ Flag format: flag{string}
 
 The file contains a base64 encoded string. Once decoded, we find ourselves again with a base64 text.
 
-Decode it 6 times in total and you will come across this message :
+Decode it 6 times in total and you will come across this message:
 
 ```
 This is a secret message: flag{3nc0d1ng_1s_n0t_3ncrypt10n!}
@@ -285,7 +285,7 @@ Flag format: flag{firstname_surname}
 
 **Solution**
 
-Just do a reverse search on Google Image to find this photo :
+Just do a reverse search on Google Image to find this photo:
 
 <img src="https://fotos.web.sapo.io/i/Bf40107bb/15526902_qtTvi.jpeg">
 
@@ -305,6 +305,26 @@ Flag format: flag{string}
 
 [hackerman.png](hackerman.png)
 
+
+**Solution**
+
+Execute a hexdump on the file: `hexdump -C hackerman.png`
+
+```
+0032ad00  7d 03 a4 7b 28 ef 2a 5a  cd f3 c8 02 8f 55 50 33  |}..{(.*Z.....UP3|
+0032ad10  3e c0 67 00 6a de db 79  13 f8 6a 5d cf f6 99 b5  |>.g.j..y..j]....|
+0032ad20  2f 65 bd 84 f5 df 35 a0  46 bc 9c a2 7e 99 a3 4e  |/e....5.F...~..N|
+0032ad30  6b ad 0f 9f 43 f9 67 fa  ff 0e 00 81 e9 4d 81 8f  |k...C.g......M..|
+0032ad40  e1 30 d2 00 00 00 00 49  45 4e 44 ae 42 60 82 66  |.0.....IEND.B`.f|
+0032ad50  6c 61 67 7b 68 31 64 64  33 6e 5f 74 33 78 74 5f  |lag{h1dd3n_t3xt_|
+0032ad60  31 6e 5f 70 6c 34 31 6e  73 31 67 68 74 7d        |1n_pl41ns1ght}|
+0032ad6e
+```
+
+At the very end of the file there is the flag.
+
+Done! We have our flag "`flag{h1dd3n_t3xt_1n_pl41ns1ght}`"
+
 ## Welcome to the challenge
 
 **Challenge**
@@ -317,6 +337,24 @@ Flag format: flag{string}
 
 [rcts_challenge.jpg](rcts_challenge.jpg)
 
+**Solution**
+
+Execute a binwalk on the file: `binwalk --dd='.*' rcts_challenge.jpg`
+
+```
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             JPEG image data, JFIF standard 1.01
+74737         0x123F1         PNG image, 400 x 200, 8-bit/color RGBA, non-interlaced
+75273         0x12609         Zlib compressed data, best compression
+```
+
+binwalk will extract for us hidden files inside our jpeg image if there are any and actually a png was well hidden inside!
+
+<img src="123F1.png">
+
+Done! We have our flag "`flag{0n3_1m4g3_1s_n0t_3n0ugh}`"
+
 ## About us
 
 **Challenge**
@@ -328,6 +366,16 @@ Can you get the flag?
 Flag format: flag{string}
 
 [RCTSCERT-FCCN.pdf](RCTSCERT-FCCN.pdf)
+
+**Solution**
+
+Just Execute the strings command on the file and grep only the lines containing "flag": `strings RCTSCERT-FCCN.pdf | grep flag`
+
+```
+  <pdfx:Flag>flag{4b0ut_us_4t_rcts_c3rt}</pdfx:Flag>
+```
+
+Done! We have our flag "`flag{4b0ut_us_4t_rcts_c3rt}`"
 
 ## Keyp it universal
 
@@ -343,6 +391,22 @@ Regex: flag{[0-9a-z_]+}
 
 [capture.pcap](capture.pcap)
 
+**Solution**
+
+If we open the capture in Wireshark we can notice that it is a USB communication.
+
+The first packets tell us that the source is a keyboard, so we go in front of a keylogger.
+
+We apply a filter to display only the packets sent by the keyboard `usb.dst == "host"` and we are therefore only interested in the interrupts that contain the data `USB_INTERRUPT in`
+
+The data that interests us is sent once on two packets and in the part "HID Data".
+
+The data we receive will be presented in this way `00/20 00 xx 00 00 00 00 00 00`. xx corresponding to the key pressed on the keyboard.
+
+On page 53 of the [Universal Serial Bus HID Usage Tables](https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf), we have the one that interests us: the keyboard, we only have to convert the data into ASCI characters.
+
+Done! We have our flag "`flag{usb_p4ck3t_c4ptur3_1s_fun}`"
+
 ## Maybe the helper can help
 
 **Challenge**
@@ -352,6 +416,29 @@ You might not see it, but a flag lies within.
 Flag Format: flag{string}
 
 [the-jetsons-family.jpg](the-jetsons-family.jpg)
+
+**Solution**
+
+I didn’t find it at the CTF but I finally found it while I was writing the other writeups.
+
+Just execute stegseek with the well-known "rockyou.txt": `stegseek the-jetsons-family.jpg rockyou.txt`
+
+```
+StegSeek 0.6 - https://github.com/RickdeJager/StegSeek
+
+[i] Found passphrase: "rosey")
+[i] Original filename: "steganopayload986089.txt".
+[i] Extracting to "the-jetsons-family.jpg.out".
+```
+
+The file "the-jetsons-family.jpg.out" contains the following:
+```
+Wm14aFozdFVhRVZtVlhSVmNrVnBVMjVQZHlGOQ==
+```
+
+Content that once decoded twice from base64 gives us the flag!
+
+Done! We have our flag "`flag{ThEfUtUrEiSnOw!}`"
 
 ## Where did agent rooot login from
 
