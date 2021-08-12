@@ -4,17 +4,23 @@ This 24-hour CTF has 30 challenges, and it is the first stage of "CTF Internacio
 
 ## Overview
 
-| Title | Category | Points |
-|-------|----------|--------|
-|[A simple challenge](#a-simple-challenge) | Crypto | 100 |
-|[Roman encryption](#roman-encryption) | Crypto | 100 |
-|[Hextraordinary security](#hextraordinary-security)| Crypto | 100 |
-|[Some type of juggling](#some-type-of-juggling)| Web | 100 |
-|[Exclusive access](#exclusive-access)| Web | 100 |
-|[It is Magic after all](#it-is-magic-after-all)| Web | 100 |
-|[You are not allowed](#you-are-not-allowed)| Reverse Engineering | 100 |
-|[Well hello there](#well-hello-there)| Pwn | 100 |
-|[Welcome to Lisbon!](#welcome-to-lisbon) | OSINT | 100 |
+| Title | Category | Points | Submitted | Solution | Flag |
+|-------|----------|--------|-----------|----------|------|
+|[A simple challenge](#a-simple-challenge) | Crypto | 100 | ✔️ | ✔️ | ✔️ |
+|[Roman encryption](#roman-encryption) | Crypto | 100 | ✔️ | ✔️ | ✔️ |
+|[Hextraordinary security](#hextraordinary-security)| Crypto | 100 | ✔️ | ✔️ | ✔️ |
+|[Some type of juggling](#some-type-of-juggling)| Web | 100 | ✔️ | ✔️ | ❌ |
+|[Exclusive access](#exclusive-access)| Web | 100 | ✔️ | ❌ | ❌ |
+|[It is Magic after all](#it-is-magic-after-all)| Web | 100 | ✔️ | ✔️ | ❌ |
+|[You are not allowed](#you-are-not-allowed)| Reverse Engineering | 100 | ✔️ | ✔️ | ✔️ |
+|[Well hello there](#well-hello-there)| Pwn | 100 | ✔️ | ✔️ | ❌ |
+|[Welcome to Lisbon!](#welcome-to-lisbon) | OSINT | 100 | ✔️ | ✔️ | ✔️ |
+|[Hiding in plain sight](#hiding-in-plain-sight) | Forensics | 100 | ✔️ |  |  |
+|[Welcome to the challenge](#welcome-to-the-challenge) | Forensics | 100 | ✔️ |  |  |
+|[About us](#about-us) | Forensics | 100 | ✔️ |  |  |
+|[Keyp it universal](#keyp-it-universal) | Forensics | 100 | ✔️ |  |  |
+|[Maybe the helper can help](#maybe-the-helper-can-help) | Forensics | 100 | ❌ |  |  |
+|[Where did agent rooot login from](#Where-did-agent-rooot-login-from) | Forensics | 449 | ❌ |  |  |
 
 
 ## A simple challenge
@@ -271,3 +277,71 @@ Just do a reverse search on Google Image to find this photo :
 All that remains is to find the name of the model, which is `Adriana Lima`
 
 Done! We have our flag "`flag{adriana_lima}`"
+
+ ## Hiding in plain sight
+
+**Challenge**
+
+I think there is something fishy about this image.
+
+Can you help me out?
+
+Flag format: flag{string}
+
+[hackerman.png](hackerman.png)
+
+## Welcome to the challenge
+
+**Challenge**
+
+Welcome to the RCTS Challenge!
+
+Can you find the flag?
+
+Flag format: flag{string}
+
+[rcts_challenge.jpg](rcts_challenge.jpg)
+
+## About us
+
+**Challenge**
+
+This challenge is about the RCTS CERT at FCCN.
+
+Can you get the flag?
+
+Flag format: flag{string}
+
+[RCTSCERT-FCCN.pdf](RCTSCERT-FCCN.pdf)
+
+## Keyp it universal
+
+**Challenge**
+
+We intercepted a strange communication which we believe has important information inside.
+
+Can you retrieve the information from it?
+
+Flag format: flag{string}
+
+Regex: flag{[0-9a-z_]+}
+
+[capture.pcap](capture.pcap)
+
+## Maybe the helper can help
+
+**Challenge**
+
+You might not see it, but a flag lies within.
+
+Flag Format: flag{string}
+
+[the-jetsons-family.jpg](the-jetsons-family.jpg)
+
+## Where did agent rooot login from
+
+**Challenge**
+
+He's a secret agent. He doesn't need the protocol to be running on the asian-located box in order to use it.
+
+Flag format: flag{ip address}
