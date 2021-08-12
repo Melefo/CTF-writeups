@@ -27,6 +27,15 @@ This 24-hour CTF has 30 challenges, and it is the first stage of "CTF Internacio
 |[Oh there's another flag](#oh-theres-another-flag) | Misc | 430 | ✔️ |  |  |
 |[Judy also has a flag](#judy-also-has-a-flag) | Misc | 464 | ❌ |  |  |
 |[Where in the world is](#where-in-the-world-is) | Misc | 469 | ❌ |  |  |
+|[Decrypting the payload](#decrypting-the-payload) | Mission | 100 | ✔️ |  |  |
+|[Locked outside](#Locked-outside) | Mission | 100 | ✔️ |  |  |
+|[Something Suspicious](#something-suspicious) | Mission | 100 | ✔️ |  |  |
+|[Changing our locks and dumping old keys](#changing-our-locks-and-dumping-old-keys) | Mission | 100 | ✔️ |  |  |
+|[Know your enemy](#know-your-enemy) | Mission | 191 | ✔️ |  |  |
+|[Blue team becomes Red Team](#blue-team-becomes-red-team) | Mission | 269 | ✔️ |  |  |
+|[Getting the crown jewels](#getting-the-crown-jewels) | Mission | 269 | ✔️ |  |  |
+|[Locating our Attacker](#locating-our-attacker) | Mission | 443 | ❌ |  |  |
+|[Crime doesnt' pay](#crime-doesnt-pay) | Mission | 481 | ❌ |  |  |
 
 
 ## A simple challenge
@@ -421,3 +430,115 @@ Flag format: flag{string}
 He will tell you as soon as you find him.
 
 Flag format: flag{string}
+
+## Decrypting the payload
+
+**Challenge**
+
+We need to know how the attacker gained access to our network.
+
+The team discovered that some of our employees where targeted by a phishing attempt and got this excel file from their emails.
+
+Can you check if this was used to gain a foothold in our network?
+
+Flag format: flag{string}
+
+[Account_report.xlsm](Account_report.xlsm)
+
+## Locked outside
+
+**Challenge**
+
+Based on the payload discovered, the employee’s computer was used to compromise a machine in our network.
+
+We checked the machine and confirmed that we’ve lost SSH access to it.
+
+Can you check if we can get the access back?
+
+Flag format: flag{string}
+
+[lockedout.ova](lockedout.ova)
+
+## Something Suspicious
+
+**Challenge**
+
+We have detected a strange activity inside our network and manage to get some logs from it.
+
+Can you see what happened and if there was a host compromised?
+
+Flag format: flag{string}
+
+[ftp.log](ftp.log) [ssh.log](ssh.log)
+
+## Changing our locks and dumping old keys
+
+**Challenge**
+
+There should be something in the server that was used to maintain persistence.
+
+Can you track this one and find more information about the attacker?
+
+Flag format: flag{string}
+
+## Know your enemy
+
+**Challenge**
+
+Now we know where the attack came from, and a quick scan found a web server on the machine. Let’s see if we can get more intel on our attacker.
+
+URL: http://challenges.defsoc.tk:8895
+
+Flag format: flag{string}
+
+## Blue team becomes Red Team
+
+**Challenge**
+
+We now need to exploit this server in order to find useful information from our attacker.
+
+Let’s use our Red team skills and get foothold on the machine.
+
+Flag format: flag{string}
+
+[hyp3r10n.ova](hyp3r10n.ova)
+
+## Getting the crown jewels
+
+**Challenge**
+
+After getting in the server, we found a private SSH key inside.
+
+If we can crack this password, maybe we can use password spraying in the attacker assets.
+
+Flag format: flag{string}
+
+## Locating our Attacker
+
+**Challenge**
+
+We’ve discovered some projects and a zip file inside the server. Let’s see if we can figure some information of our attacker from those, maybe we can track down our attacker and report it to the authorities.
+
+Flag format: flag{'BSSID'_'email'}
+
+## Crime doesnt' pay
+
+**Challenge**
+
+After our report, the authorities tracked down the attacker and arrested him. Good job! However, there is some information needed for our final report. Can you fill these out so that we can close this incident?
+
+What was the first service to be accessed in Mission challenge 1? (flag1 = 'service name')
+
+What is the IP address of the payload on the Excel macro vba, in Mission challenge 2? (flag2 = 'IP Address')
+
+What file is used to enable the default login method in Mission challenge 3? (flag3 = 'name of the file')
+
+What is the malicious domain used in the persistant reverse shell, in Mission challenge 4? (flag4 = 'subdomain')
+
+What is the video file name running in the Hyperion website, on Mission challenge 5? (flag5 = 'video file name')
+
+What is the name of the oldest site backup in the backup folder, in Mission challenge 6? (flag6 = 'backup file name')
+
+What is the name of the attacker, found on Mission challenge 8? (flag7 = 'FirstName'_'LastName')
+
+Flag format: flag{flag1_flag2_flag3_flag4_flag5_flag6_flag7}
