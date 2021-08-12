@@ -84,7 +84,7 @@ The message was encrypted with an alphabetical substitution.
 
 The challenge gives us instead the encryption key, The whole name of Caesar: `Gaius Julius Caesar`
 
-But a substitution key cannot contain the same characters several times, then we have `GaiusJlCer` to apply on the text to find:`
+But a substitution key cannot contain the same characters several times, then we have `GaiusJlCer` to apply on the text to find:git 
 
 ```
 Hello Julius,
