@@ -24,6 +24,9 @@ This 24-hour CTF has 30 challenges, and it is the first stage of "CTF Internacio
 |[Knock Knock](#knock-knock) | Network | 100 | ✔️ |  |  |
 |[The lost Jetson](#the-lost-jetson) | Network | 400 | ✔️ |  |  |
 |[Vacation time!](#vacation-time) | Network | 464 | ✔️ |  |  |
+|[Oh there's another flag](#oh-theres-another-flag) | Misc | 430 | ✔️ |  |  |
+|[Judy also has a flag](#judy-also-has-a-flag) | Misc | 464 | ❌ |  |  |
+|[Where in the world is](#where-in-the-world-is) | Misc | 469 | ❌ |  |  |
 
 
 ## A simple challenge
@@ -390,5 +393,31 @@ After being reunited, the Jetsons will travel to Europe[.jetsons.tk]
 Find exactly where. Europe is ancient. Look for ancient protocols.
 
 Caution: The Flag Throws (some) Phire.
+
+Flag format: flag{string}
+
+## Oh there's another flag
+
+**Challenge**
+
+When you find the futuristic boy he will have a hint about a 2nd flag.
+
+Flag format: flag{string}
+
+## Judy also has a flag
+
+**Challenge**
+
+...hidden in her room^H^H^H^H own DNS zone.
+
+Flag format: flag{string}
+
+## Where in the world is
+
+**Challenge**
+
+...the missing Jetson kid?
+
+He will tell you as soon as you find him.
 
 Flag format: flag{string}
