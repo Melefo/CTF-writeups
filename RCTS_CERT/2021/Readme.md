@@ -21,12 +21,12 @@ This 24-hour CTF has 30 challenges, and it is the first stage of "CTF Internacio
 |[Keyp it universal](#keyp-it-universal) | Forensics | 100 | ✔️ | ✔️ | ✔️ |
 |[Maybe the helper can help](#maybe-the-helper-can-help) | Forensics | 100 | ❌ | ✔️ | ✔️ |
 |[Where did agent rooot login from](#Where-did-agent-rooot-login-from) | Forensics | 449 | ❌ | ❌ | ❌ |
-|[Knock Knock](#knock-knock) | Network | 100 | ✔️ |  |  |
-|[The lost Jetson](#the-lost-jetson) | Network | 400 | ✔️ |  |  |
-|[Vacation time!](#vacation-time) | Network | 464 | ✔️ |  |  |
-|[Oh there's another flag](#oh-theres-another-flag) | Misc | 430 | ✔️ |  |  |
-|[Judy also has a flag](#judy-also-has-a-flag) | Misc | 464 | ❌ |  |  |
-|[Where in the world is](#where-in-the-world-is) | Misc | 469 | ❌ |  |  |
+|[Knock Knock](#knock-knock) | Network | 100 | ✔️ | ✔️ | ✔️ |
+|[The lost Jetson](#the-lost-jetson) | Network | 400 | ✔️ | ✔️ | ✔️ |
+|[Vacation time!](#vacation-time) | Network | 464 | ✔️ | ✔️ | ✔️ |
+|[Oh there's another flag](#oh-theres-another-flag) | Misc | 430 | ✔️ | ✔️ | ✔️ |
+|[Judy also has a flag](#judy-also-has-a-flag) | Misc | 464 | ❌ | ❌ | ❌ |
+|[Where in the world is](#where-in-the-world-is) | Misc | 469 | ❌ | ❌ | ❌ |
 |[Decrypting the payload](#decrypting-the-payload) | Mission | 100 | ✔️ |  |  |
 |[Locked outside](#Locked-outside) | Mission | 100 | ✔️ |  |  |
 |[Something Suspicious](#something-suspicious) | Mission | 100 | ✔️ |  |  |
@@ -464,6 +464,56 @@ Flag format: flag{string}
 
 [knock_knock.ova](knock_knock.ova) [id_rsa](id_rsa)
 
+**Solution**
+
+Start by installing the .ova file in a virtual machine, I personally use VMWare.
+
+You can then run the command `nmap -A [IP]` to see open ports.
+
+<img src="nmap_knockknock.png">
+
+We can see that the only open port is the ftp port. So we connect to it to find ourselves with this pretty banner:
+
+```
+ ██████╗ █████╗ ███╗   ██╗    ██╗   ██╗ ██████╗ ██╗   ██╗    ██╗  ██╗███╗   ██╗ ██████╗  ██████╗██╗  ██╗
+██╔════╝██╔══██╗████╗  ██║    ╚██╗ ██╔╝██╔═══██╗██║   ██║    ██║ ██╔╝████╗  ██║██╔═══██╗██╔════╝██║ ██╔╝
+██║     ███████║██╔██╗ ██║     ╚████╔╝ ██║   ██║██║   ██║    █████╔╝ ██╔██╗ ██║██║   ██║██║     █████╔╝
+██║     ██╔══██║██║╚██╗██║      ╚██╔╝  ██║   ██║██║   ██║    ██╔═██╗ ██║╚██╗██║██║   ██║██║     ██╔═██╗
+╚██████╗██║  ██║██║ ╚████║       ██║   ╚██████╔╝╚██████╔╝    ██║  ██╗██║ ╚████║╚██████╔╝╚██████╗██║  ██╗
+ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═══╝       ╚═╝    ╚═════╝  ╚═════╝     ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝╚═╝  ╚═╝
+
+ ██████╗ ███╗   ██╗    ████████╗██╗  ██╗███████╗
+██╔═══██╗████╗  ██║    ╚══██╔══╝██║  ██║██╔════╝
+██║   ██║██╔██╗ ██║       ██║   ███████║█████╗
+██║   ██║██║╚██╗██║       ██║   ██╔══██║██╔══╝
+╚██████╔╝██║ ╚████║       ██║   ██║  ██║███████╗
+ ╚═════╝ ╚═╝  ╚═══╝       ╚═╝   ╚═╝  ╚═╝╚══════╝
+
+██████╗ ██╗ ██████╗ ██╗  ██╗████████╗    ██████╗  ██████╗  ██████╗ ██████╗ ███████╗██████╗
+██╔══██╗██║██╔════╝ ██║  ██║╚══██╔══╝    ██╔══██╗██╔═══██╗██╔═══██╗██╔══██╗██╔════╝╚════██╗
+██████╔╝██║██║  ███╗███████║   ██║       ██║  ██║██║   ██║██║   ██║██████╔╝███████╗  ▄███╔╝
+██╔══██╗██║██║   ██║██╔══██║   ██║       ██║  ██║██║   ██║██║   ██║██╔══██╗╚════██║  ▀▀══╝
+██║  ██║██║╚██████╔╝██║  ██║   ██║       ██████╔╝╚██████╔╝╚██████╔╝██║  ██║███████║  ██╗
+╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝       ╚═════╝  ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝  ╚═╝
+
+███████╗ ██████╗  ██████╗  ██████╗         █████╗  ██████╗  ██████╗  ██████╗         █████╗  ██████╗  ██████╗  ██████╗
+╚════██║██╔═████╗██╔═████╗██╔═████╗       ██╔══██╗██╔═████╗██╔═████╗██╔═████╗       ██╔══██╗██╔═████╗██╔═████╗██╔═████╗
+    ██╔╝██║██╔██║██║██╔██║██║██╔██║       ╚█████╔╝██║██╔██║██║██╔██║██║██╔██║       ╚██████║██║██╔██║██║██╔██║██║██╔██║
+   ██╔╝ ████╔╝██║████╔╝██║████╔╝██║       ██╔══██╗████╔╝██║████╔╝██║████╔╝██║        ╚═══██║████╔╝██║████╔╝██║████╔╝██║
+   ██║  ╚██████╔╝╚██████╔╝╚██████╔╝▄█╗    ╚█████╔╝╚██████╔╝╚██████╔╝╚██████╔╝▄█╗     █████╔╝╚██████╔╝╚██████╔╝╚██████╔╝
+   ╚═╝   ╚═════╝  ╚═════╝  ╚═════╝ ╚═╝     ╚════╝  ╚═════╝  ╚═════╝  ╚═════╝ ╚═╝     ╚════╝  ╚═════╝  ╚═════╝  ╚═════╝
+```
+
+Which tells us that we should perhaps try nmap on these three ports: `nmap -p 7/8/9000 [IP]`
+
+Let's do another `nmap -A [IP]` to see if ssh port (22) is now open... Yes it is!
+
+The id_rsa key tells us that the user is `ctf` so we can connect using `ssh -i id_sra ctf@[IP]` and... We're in!
+
+Let's cat the `flag.txt` file and we have our key!
+
+Done! We have our flag "`flag{kn0ck1ng_0n_d00rs_1s_p0l1t3}`"
+
 ## The lost Jetson
 
 **Challenge**
@@ -480,6 +530,22 @@ Flag format: flag{[address]:port}
 
 (You don't need root access in any of the boxes!)
 
+**Solution**
+
+First to find the common username I tried to be logical, what do both parents have in common? the surname: jetson.
+
+We connect with ssh on one or the other with `ssh jetson@194.210.128.231/2`.
+We end up with two banners, one to say that the password is the name of the wife `Jane` and the other of the husband `George`.
+
+Since I had to find an IP, I looked at the current connections with the command `netstat -nputw`.
+The flag is asking for an IPv6 address I looked at those connected and there was one!
+
+Connect with ssh on it `ssh -p 2200 2001:db8:a:1:5054:ff:fecb:1279`, success! It's asking for a password, let's try `elroy` and here we go.
+
+When I entered the address in the flag it was wrong, I did not have the correct IP, after some commands I found: `fe80::5054:ff:fecb:1279`
+
+Done! We have our flag "`flag{[fe80::5054:ff:fecb:1279]:2200}`"
+
 ## Vacation time!
 
 **Challenge**
@@ -492,6 +558,38 @@ Caution: The Flag Throws (some) Phire.
 
 Flag format: flag{string}
 
+**Solution**
+
+First if we look at the warning in the description we can see that each word has a capital letter: `tftp`
+
+We have our old protocol! We connect with `tftp europe.jetsons.tk`.
+
+And from there I didn’t really know what to do so I tried to get the name of all the European countries without success.
+
+So I ended up trying to get the flag directly: `get flag.txt`
+
+And it worked... Here are its contents:
+```
+(_ _)
+ | |____....----....____         _ 
+ | |\                . .~~~~---~~ |
+ | | |         __\\ /(/(  .       |
+ | | |      <--= '|/_/_( /|       |
+ | | |       }\~) | / _(./      ..|
+ | | |..::::::\\/      --...::::::|
+ | | |:::::::::\//::\\__\:::::::::|
+ | | |::::::::_//_:_//__\\_:::::::|
+ | | |::::::::::::::::::::::::::::|
+ | |/:::''''~~~~''''::::::::::::''~
+ | |                    ~~~~~
+
+[666c61677b5377616e736561497357616c65734361706974616c7d]
+```
+
+The text below is a string of ASCII characters in hexadecimal by converting it we get the flag.
+
+Done! We have our flag "`flag{SwanseaIsWalesCapital}`"
+
 ## Oh there's another flag
 
 **Challenge**
@@ -499,6 +597,21 @@ Flag format: flag{string}
 When you find the futuristic boy he will have a hint about a 2nd flag.
 
 Flag format: flag{string}
+
+**Solution**
+
+We need to go back to Elroy’s ssh found in [The lost Jetson](#the-lost-jetson). 
+
+In his banner he tells us that he misses his dog but with a dollar `$dog`.
+
+So I just tried to write dog in the terminal and a text was echo:
+```
+Your flag is Elroy's dog plus the year when Jetsons were created. Lowercase.
+```
+
+The Jetsons were created in 1962 and the dog is called Astro.
+
+Done! We have our flag "`flag{astro1962}`"
 
 ## Judy also has a flag
 
