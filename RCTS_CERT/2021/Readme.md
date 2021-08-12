@@ -14,6 +14,7 @@ This 24-hour CTF has 30 challenges, and it is the first stage of "CTF Internacio
 |[It is Magic after all](#it-is-magic-after-all)| Web | 100 |
 |[You are not allowed](#you-are-not-allowed)| Reverse Engineering | 100 |
 |[Well hello there](#well-hello-there)| Pwn | 100 |
+|[Welcome to Lisbon!](#welcome-to-lisbon) | OSINT | 100 |
 
 
 ## A simple challenge
@@ -248,3 +249,25 @@ All we need to do is write a large number of characters to have them rewrite the
 We launch the netcat command `nc challenges.defsoc.tk 22228`, we write `AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`, and that's it the cat command is executed.
 
 Done! We have our flag
+
+## Welcome to Lisbon!
+
+**Challenge**
+
+Oh, some activists defaced a Victoria Secret's store.
+
+Find out which was the model whose photo was damaged.
+
+Flag format: flag{firstname_surname}
+
+[welcome_to_lisbon.jpg](welcome_to_lisbon.jpg)
+
+**Solution**
+
+Just do a reverse search on Google Image to find this photo :
+
+<img src="https://fotos.web.sapo.io/i/Bf40107bb/15526902_qtTvi.jpeg">
+
+All that remains is to find the name of the model, which is `Adriana Lima`
+
+Done! We have our flag "`flag{adriana_lima}`"
