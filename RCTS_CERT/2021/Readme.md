@@ -21,6 +21,9 @@ This 24-hour CTF has 30 challenges, and it is the first stage of "CTF Internacio
 |[Keyp it universal](#keyp-it-universal) | Forensics | 100 | ✔️ |  |  |
 |[Maybe the helper can help](#maybe-the-helper-can-help) | Forensics | 100 | ❌ |  |  |
 |[Where did agent rooot login from](#Where-did-agent-rooot-login-from) | Forensics | 449 | ❌ |  |  |
+|[Knock Knock](#knock-knock) | Network | 100 | ✔️ |  |  |
+|[The lost Jetson](#the-lost-jetson) | Network | 400 | ✔️ |  |  |
+|[Vacation time!](#vacation-time) | Network | 464 | ✔️ |  |  |
 
 
 ## A simple challenge
@@ -345,3 +348,47 @@ Flag Format: flag{string}
 He's a secret agent. He doesn't need the protocol to be running on the asian-located box in order to use it.
 
 Flag format: flag{ip address}
+
+## Knock Knock
+
+**Challenge**
+
+We recently found a private SSH key that will allow us to login in the attached machine.
+
+However, we can't seem to be able to login through SSH.
+
+Can you help us out?
+
+No brute force is required.
+
+Flag format: flag{string}
+
+[knock_knock.ova](knock_knock.ova) [id_rsa](id_rsa)
+
+## The lost Jetson
+
+**Challenge**
+
+You can find his parents at 194.210.128.231 (a.jetsons.tk) and 194.210.128.232 (b.jetsons.tk).
+
+*** PLEASE DO NOT PORTSCAN THESE TWO ADDRESSES *** Port 22 is open on both of them. Username is the same for both servers.
+
+*** For this challenge you DON'T need to portscan anything on 194.210.128.x ***
+
+Find out the address and port where the kid can be found!
+
+Flag format: flag{[address]:port}
+
+(You don't need root access in any of the boxes!)
+
+## Vacation time!
+
+**Challenge**
+
+After being reunited, the Jetsons will travel to Europe[.jetsons.tk]
+
+Find exactly where. Europe is ancient. Look for ancient protocols.
+
+Caution: The Flag Throws (some) Phire.
+
+Flag format: flag{string}
