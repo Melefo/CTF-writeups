@@ -13,6 +13,7 @@ This 24-hour CTF has 30 challenges, and it is the first stage of "CTF Internacio
 |[Exclusive access](#exclusive-access)| Web | 100 |
 |[It is Magic after all](#it-is-magic-after-all)| Web | 100 |
 |[You are not allowed](#you-are-not-allowed)| Reverse Engineering | 100 |
+|[Well hello there](#well-hello-there)| Pwn | 100 |
 
 
 ## A simple challenge
@@ -210,7 +211,7 @@ Personally I like to put programs in IDA even if there is no need.
 
 Looking at the main function of the program we can see that it is only a comparison between two strings.
 
-<img src="main.png">
+<img src="main_program.png">
 
 We enter the sub function to get the s1 variable and we can see that the characters are hard-coded, we transform the decimal bytes into ASCII and we find `Sup3rS3cr3tK3y#`.
 
@@ -221,3 +222,29 @@ We execute the program and enter the string found and it shows us the key.
 <img src="exec.png">
 
 Done! We have our flag "`flag{1ntr0_t0_r3v3rs3_3ng1n33r1ng}`"
+
+## Well hello there
+
+**Challenge**
+
+We initiated the development of a bot. So far it greets you by your name. Can you test it?
+
+Access: nc challenges.defsoc.tk 22228
+
+Flag format: flag{string}
+
+[program_local](program_local)
+
+**Solution**
+
+As for the program "You are not allowed", I decompile it in IDA
+
+<img src="main_program_local.png">
+
+We can see that the program uses gets that writes all the characters that the user enters in a buffer. However this is dangerous because gets will write all the characters even if the buffer is too small causing an overflow moreover the "buffer" `v4` sent in gets is not allocated.
+
+All we need to do is write a large number of characters to have them rewrite the value of `v5`, changing the condition to true.
+
+We launch the netcat command `nc challenges.defsoc.tk 22228`, we write `AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`, and that's it the cat command is executed.
+
+Done! We have our flag
