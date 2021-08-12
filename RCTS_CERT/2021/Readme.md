@@ -9,6 +9,9 @@ This 24-hour CTF has 30 challenges, and it is the first stage of "CTF Internacio
 |[A simple challenge](#a-simple-challenge) | Crypto | 100 |
 |[Roman encryption](#roman-encryption) | Crypto | 100 |
 |[Hextraordinary security](#hextraordinary-security)| Crypto | 100 |
+|[Some type of juggling](#some-type-of-juggling)| Web | 100 |
+|[Exclusive access](#exclusive-access)| Web | 100 |
+|[It is Magic after all](#it-is-magic-after-all)| Web | 100 |
 
 
 ## A simple challenge
@@ -123,3 +126,69 @@ t<_BTp)A7S<pQ>>?c~BeyX&.j &Ms_Oq2ghdmJ:e,L (-LrQ2g
 You might think it’s not over but look at the 15th line...
 
 Done! We have our flag "`flag{h3x4d3c1m4l_4s_4n_0bfusc4t10n_t00l}`"
+
+## Some type of juggling
+
+**challenge**
+
+Can you solve this challenge?
+
+URL: http://challenges.defsoc.tk:8080
+
+Flag format: flag{string}
+
+**solution**
+
+On the source code we can see a comparison between the md5 of a $_GET parameter and an internal variable is checked.
+
+We could try to put the same value as the internal variable, that is `240610708` but another condition prevents us from doing so.
+
+Looking at the md5 hash of the variable we can see that it looks like that `0e462097431906509019562988736854`. PHP considers this kind of value as a scientific notation and by definition, zero raised to any power is zero.
+
+We need can find another hash that looks like a zero raised to any power so that the condition becomes true. On the internet you can find many "Magic Hashes" including `QNKCDZO`.
+
+Done! We have our flag
+
+## Exclusive access
+
+**Challenge**
+
+We discovered a protected page. Can you bypass it?
+
+URL: http://challenges.defsoc.tk:9999
+
+Flag format: flag{string}
+
+## It is Magic after all
+
+**Challange**
+
+Can you do some magic in this page?
+
+URL: http://challenges.defsoc.tk:3000
+
+Flag format: flag{string}
+
+**Solution**
+
+On the source code we can find a `Magic` class and a condition that checks that a $_GET parameter is a `Magic` and it's key field is true.
+
+We just need to copy past the class and echo the serialization of the class:
+
+```php
+<?php
+class Magic
+{
+    public $key;
+}
+
+$user = new Magic;
+$user->key = True;
+
+echo serialize($user);
+?>
+```
+
+The output is `O:5:"Magic":1:{s:3:"key";b:1;}` and now we put it inside our $_GET variable.
+
+Done! We have our flag
