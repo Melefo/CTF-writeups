@@ -37,6 +37,7 @@ This 24-hour CTF has 30 challenges, and it is the first stage of "CTF Internacio
 |[Locating our Attacker](#locating-our-attacker) | Mission | 443 | ❌ | ❌ | ❌ |
 |[Crime doesnt' pay](#crime-doesnt-pay) | Mission | 481 | ❌ | ❌ | ❌ |
 
+I'm sorry for the missing flags and solutions it was my first CTF and I didn't record my attempts or saved anything. I've done this ReadMe by memory...
 
 ## A simple challenge
 
