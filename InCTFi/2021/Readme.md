@@ -20,6 +20,10 @@ InCTF International is a premier hacking event targeted at hackers of all ages, 
 | [Encrypted Operations](#encrypted-operations) | Crypto | 823 | 21 | ❌ | ❌ | ❌ | ❔ |
 | [Trouble With Pairs](#trouble-with-pairs) | Crypto | 925 | 14 | ❌ | ❌ | ❌ | ❔ |
 | [Tabula Recta](#tabula-recta) | Crypto | 996 | 4 | ❌ | ❌ | ❌ | ❔ |
+| [Listen](#listen) | Network Pentest | 100 | 49 | ❌ | ❌ | ❌ | ✔️ |
+| [Shell Boi](#shell-boi) | Network Pentest | 956 | 11 | ❌ | ❌ | ❌ | ✔️ |
+| [Legacy](#legacy) | Network Pentest | 993 | 5 | ❌ | ❌ | ❌ | ✔️ |
+| [Home Drive](#home-drive) | Network Pentest | 993 | 5 | ❌ | ❌ | ❌ | ✔️ |
 
 ---
 
@@ -288,6 +292,8 @@ Author : [chandu-kona](https://twitter.com/chandu_kona)
 
 ## Tabula Recta
 
+**Challenge**
+
 X made a stateless password manager and used it for all the top sites he visited. But on observing the code he found that his key could retrieve a maximum number of states and decided to not use it because of its weaknesses.
 
 However, he did not get to reset all of his passwords.
@@ -299,3 +305,53 @@ MD5sum : `072419cd201a7964c19a7177af1ec090 src.zip`
 Author : [ph03n1x](https://twitter.com/MeenakshiSl1), [4lex1](https://twitter.com/SandhraBino)
 
 [src.zip](Tabula_Recta.zip)
+
+## Listen
+
+**Challenge**
+
+The quieter you become, the more you are able to listen.
+
+Author: [f4lc0n](https://twitter.com/theevilsyn)
+
+**Official WriteUp**
+
+The host (172.30.0.8) will try to connect to the user's host on the ports between 31336-31338. Listen on the ports to accept the that connection and receive the flag.
+
+## Shell Boi
+
+**Challenge**
+
+He sells linux shells on the shell store.
+
+Author: [f4lc0n](https://twitter.com/theevilsyn)
+
+**Official WriteUp**
+
+There are 2 hosts in the network 172.30.0.5 and 172.30.0.8. Since this is a multi host environment, there are possibilities of MiTM attacks.  Perform an MiTM attack using tools like ettercap, you'll see that host A is sending IP and port details to host B, then host B sends reverse shell over that port. Now modify the IP and port to your local port and IP to get a reverse shell.
+
+## Legacy
+
+**Challenge**
+
+There's no guarantee, it's not up to me, you can only see.
+
+Author: [f4lc0n](https://twitter.com/theevilsyn)
+
+**Official WriteUp**
+
+There is a web server which uses legacy debug bridge api for users identified as admins. To get identified as admin, set a referer header as shown in the html page and send the debug request to the v1 api with bash commands to get RCE as www-data. 
+
+Now, for privilege escalation - there is a cronjob running which tries lo load env variables from a file in www-data's scope and executes zcat. Create a fake zcat with reverse shell payload in the path variable set by you using the env file. Now wait for root to execute that with cron.
+
+## Home Drive
+
+**Challenge**
+
+Tell us about our naive [NAS](http://172.30.0.8:5000/) architecture :P
+
+Authors: [f4lc0n](https://twitter.com/theevilsyn), [amr_bal](https://twitter.com/amr_bal)
+
+**Official WriteUp**
+
+Download the apk, reverse it, understand the functionalities of the API server. Get access to the hidden FTP network by adding a manual route using ip route add and get the admin's public key. Now sign the JWT token with that key and login as admin. Now trigger the /admin/config request and send a malicious yaml for the server to load.
