@@ -20,12 +20,21 @@ InCTF International is a premier hacking event targeted at hackers of all ages, 
 | [Encrypted Operations](#encrypted-operations) | Crypto | 823 | 21 | ❌ | ❌ | ❌ | ❔ |
 | [Trouble With Pairs](#trouble-with-pairs) | Crypto | 925 | 14 | ❌ | ❌ | ❌ | ❔ |
 | [Tabula Recta](#tabula-recta) | Crypto | 996 | 4 | ❌ | ❌ | ❌ | ❔ |
-| [Listen](#listen) | Network Pentest | 100 | 49 | ❌ | ❌ | ❌ | ✔️ |
-| [Shell Boi](#shell-boi) | Network Pentest | 956 | 11 | ❌ | ❌ | ❌ | ✔️ |
-| [Legacy](#legacy) | Network Pentest | 993 | 5 | ❌ | ❌ | ❌ | ✔️ |
-| [Home Drive](#home-drive) | Network Pentest | 993 | 5 | ❌ | ❌ | ❌ | ✔️ |
+| [Listen](#listen) | Network Pentest | 100 | 49 | ❌ | ❌ | ❌ | ❕ |
+| [Shell Boi](#shell-boi) | Network Pentest | 956 | 11 | ❌ | ❌ | ❌ | ❕ |
+| [Legacy](#legacy) | Network Pentest | 993 | 5 | ❌ | ❌ | ❌ | ❕ |
+| [Home Drive](#home-drive) | Network Pentest | 993 | 5 | ❌ | ❌ | ❌ | ❕ |
+| [Ermittlung](#ermittlung) | Forensics | 140 | 45 | ❌ | ❌ | ❌ | ❕ |
+| [Darkness](#darkness) | Forensics | 887 | 17 | ❌ | ❌ | ❌ | ❕ |
+| [Heist](#heist) | Forensics | 913 | 15 | ❌ | ❌ | ❌ | ❕ |
+| [The Big Score](#the_big_score) | Forensics | 956 | 11 | ❌ | ❌ | ❌ | ❕ |
+| [Heist Continues](#heist_continues) | Forensics | 984 | 7 | ❌ | ❌ | ❌ | ❕ |
+| [Heist Ends](#heist_ends) | Forensics | 989 | 6 | ❌ | ❌ | ❌ | ❕ |
 
 ---
+
+[❌ No WriteUp] [❔ Waiting for WriteUp] [❕ Short WriteUp] [✔️ Detailed WriteUp]
+
 
 ## Sanity Check
 
@@ -355,3 +364,267 @@ Authors: [f4lc0n](https://twitter.com/theevilsyn), [amr_bal](https://twitter.com
 **Official WriteUp**
 
 Download the apk, reverse it, understand the functionalities of the API server. Get access to the hidden FTP network by adding a manual route using ip route add and get the admin's public key. Now sign the JWT token with that key and login as admin. Now trigger the /admin/config request and send a malicious yaml for the server to load.
+
+## Ermittlung
+
+**Challenge**
+
+Description
+
+Our Incident Response team started their investigation on a device found when pinning down a terrorist. They got some doubts while analyzing the device, So they framed these questions can you help them in answering these questions? Our Intelligence report states that the terrorist used a legit chat application for communication among themselves.
+
+Questions:
+
+- What is the name of the chat application program?
+    - Ex: `Mozilla_Firefox` (Use Name of the program, Not the name of the binary. If there is a space replace it with _. )
+
+- When did the user last used this chat application?
+    - Answer in `DD-MM-YYYY_HH:MM:SS`. Timestamp in UTC
+    
+- How many unread messages are there in the chat application that the user is using?
+    - Answer should be an integer `n`.
+
+- What is the current version of the chat application that's being used?
+    - Answer in `X.X.XXXX.XXXX`
+
+Note:
+- Wrap the answers around inctf{}.
+- Sample flag: `inctf{Mozilla_Firefox_31-07-2020_19:00:00_10_1.2.2345.5678}`
+- Flag is Case Sensitive
+
+Challenge Download Links:
+- [Primary Link](https://drive.google.com/file/d/1qDZAtOLhVT-qr97W1bXo36poTMekvEOU/view?usp=sharing)
+
+MD5 Hash: `ermittlung.raw 110305F3CF71432B4DFAFD1538CDF850`
+
+Challenge Author: g4rud4
+
+**Official WriteUp**
+
+* Name of the chat application - **Outlook Express**
+
+* HKEY_CURRENT_CONFIG\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\count
+
+    * msimn.exe - Main executable for Outlook Express - **27-07-2020 12:26:17 UTC**
+
+* HKEY_CURRENT_CONFIG\Software\Microsoft\Windows\CurrentVersion\UnreadMail\danial.banjamin@gmail.com
+
+    * The subkey **Message Count** gives the count of unread messages. ie: **4**
+
+* HKEY_CURRENT_CONFIG\Software\Microsoft\Outlook Express\5.0\Shared Settings\Setup
+
+    * The Subkey **MigToLWPVer** gives the current usage version of Outlook Express.
+    * Version - **6.0.2900.5512**
+  Or dump the process and check the little endian strings, you will get the version.
+
+Flag: inctf{Outlook_Express_27-07-2020_12:26:17_4_6.0.2900.5512}
+
+## Darkness
+
+**Challenge**
+
+Description: We have received the report that a certain employee of of an organization might have stolen confidential information and hidden in his system. We seized his laptop and collected a forensic image of the system. Our intel suggests that the employee might have visited suspicious websites and also deleted key files from the system which could've been vital for us. Could you please recover it?
+
+Challenge link: https://storagefor.bi0s.in/Darkness-Evidence.7z
+- [Mirror Link](https://drive.google.com/file/d/1vPGSUFxB6XO5zWsYATjDEr0ubAWrDiAD/view?usp=sharing)
+
+Password (of the archive): `d:'2;]7{<-v5^4]tz@*s+%qqd}c|&mv]`
+
+Author: [stuxn3t](https://twitter.com/_abhiramkumar)
+
+**Official WriteUp**
+
+1. The zip file is actually deleted from disk and can be recovered by extracting the Volume shadow copy from the .E01.
+2. checking the browser history tells us that the employee visited pastebin but the exact paste link is not present (Basically the employee deleted a part of the history to cover his tracks).
+3. MS Windows has a feature to collect Diagnostic Data which is optional. The data collected includes MS Edge Browser History, Installed programs info and much much more.
+4. To extract the DB from the system, navigate to C:\ProgramData\Microsoft\Diagnosis\EventTranscript\EventTranscript.db and extract the file. Make sure to extract the -wal file too because that contains our required URL. Write Ahead Log files basically are used to maintain DB data and are written to original DB when system shuts down. That is why -wal file is important here.
+
+5. Open the DB using any DB viewer and to view the browser history (Table - Events_presisted) and set the column filter logging_binary_name = msedge.exe.
+
+6. In the payload section, as you dig into it, you observe the field "navigationUrl" contains the pastebin link - https://pastebin.com/cvRK3yY5
+
+7. Navigate to the URL and supply the password obtained from the recovered deleted file - The flag is: inctf{th1s_d4y_w3_d1sc0veR3d_4_N3w_4R7iFaCt}
+
+## Heist
+
+**Challenge**
+
+Challenge Description
+
+Our Intelligence Bureau team found out a group of people roaming around a well-noted organization, and our team has captured them. After the interrogation, Our IB team found out the head of the heist they planned. While capturing the leader of the heist, Our team found some electronic devices like laptops, USB devices. Our evidence collection team captured the data from these devices and sent it to us for analysis. During evidence collection, The team found out that the leader of the heist was using a lot of browsers, remote desktop applications, Voice modulators etc. Our team needs some help from you in finding answers to some questions. Can you help the team in finding answers to these questions?
+
+Questions:
+
+1. What is the default browser that the Heist leader is using on the device?
+    - Ex: `Opera_Mini`, etc (Use Name of the program, Not the name of the binary. If there is a space replace it with `_`)
+
+2. What is the top-visited website in the leader's system on the default browser?
+    - Answer in `domain.net` (`HTTP(s)://` or `www.` & sub-domains are NOT included)
+
+3. When was the latest file transfer session initiated in TeamViewer?
+    - Answer in `DD-MM-YYYY_HH:MM:SS`. Timestamp in UTC
+
+4. What is the ID, Hostname of that file-transfer session?
+    - Format: `123456789_Hostname`
+
+Note:
+1. Wrap the answers around inctf{}.
+2. Sample Flag: `inctf{Opera_Mini_google.com_01-01-2012_01:01:10_123456789_Hostname}`
+3. Flag is Case Sensitive
+
+Download Link
+- [Primary Link](https://storagefor.bi0s.in/Heist.7z)
+    - Password: `H0Y7$8j!och^jjYJMsR45KU4SV`
+- [Mirror Link](https://drive.google.com/drive/folders/1H3Ly8hnAW7eh7dxvf_bTA7_JYk8zMP3-?usp=sharing) - Splitted files, Not Password Protected.
+
+MD5 Hash: `A916E26016180D2C5189061D652DC9E1 Heist.7z`
+
+Challenge Author: [g4rud4](https://twitter.com/_Nihith)
+
+**Official WriteUp**
+
+1. From the NTUSER.DAT, we can find the default browser of the system.
+    + Hive Location: `NTUSER.DAT: Software\Microsoft\Windows\Shell\Associations\UrlAssociations\{http|https}\UserChoice`.
+    + We get Chrome as the default browser.
+
+2. As we got the default browser, we can go check the TopSites Sqlite Database present in `Users/Danial Benjamin/AppData/Local/Google/Chrome/User Data/Default/` and sort it with URL rank we get **`ebay.com`**
+
+3. On comparing `Connections_incoming.txt` and `Connections.txt` present in Teamviewer's appdata folder, we got the time File transfer session was initiated.
+    + Time initiated: `20-07-2021_07:48:50`
+
+4. We can find the ID and Hostname from the `Connections_incoming.txt` present in Teamviewer's appdata folder.
+    + ID_Hostname: `920981533_DESKTOP-S34NLCJ`
+
+Flag: inctf{Google_Chrome_ebay.com_20-07-2021_07:48:50_920981533_DESKTOP-S34NLCJ}
+
+## The Big Score
+
+**Challenge**
+
+We sent Michael over to the Union Depository to collect data from one of their systems for the heist. We were able to retrieve the data, but it looks like they were able to read the message sent to us that Michael had typed from their system. Fortunately, he took the memory dump before escaping the building. Analyze the memory dump and find out how the message was compromised.
+
+Challenge Link :
+- [Primary Link](https://drive.google.com/drive/folders/1JZfwuASJ9e8LVWcB4py59AB7kxrKEKFK?usp=sharing)
+- [Mirror Link](https://drive.google.com/drive/folders/1qzVvBS29lh8VwHWnmyqLscg0p11t8Vz3?usp=sharing)
+
+MD5 Hash : 5bdcfc3d4a73020019fc61ab6e933395
+
+Author : [d3liri0us](https://twitter.com/d3liri0us_)
+
+**Official WriteUp**
+
++ Build Linux profile for Ubuntu 18.04 (linux-headers-5.4.0-42-generic)
+
+    [Reference : https://github.com/volatilityfoundation/volatility/wiki/Linux]
+
++ Use linux_bash plugin in Volatility to recover memfd_create malware payload and decode it to retrieve the github link. (Alternate : Dump the malicious process to retrieve the github link)
+
++ Analyzing the code given in the repository, recover the bin/log file from the memory dump using linux_find_file plugin in Volatility and crack the specific hash to retrieve the file path in termbin.com. (Alternate : Since the whole process is recorded in the memory, doing a simple grep termbin.com will get you the link)
+
++ Decode the keyboard stream data from the link in order to retrieve the flag.
+
+    [Reference : https://thehackerdiary.wordpress.com/2017/04/21/exploring-devinput-1/]
+
+## Heist Continues
+
+**Challenge**
+
+Description
+
+Our analyst team at Intelligence Bureau need answers for few more questions. Can you help them out in finding answers for below questions?
+
+Questions:
+
+1. What is the workspace ID and USER ID of the Slack workspace that is the user participating in?
+    - Answer in `T0A0A0A0A0A_U0A0A0A0A0` (All in Uppercase)
+
+2. There was a remote connection and we think there is a secret text on the remote connected PC's wallpaper. What are the first and last 3 characters of the secret text?
+    - Format: `abcxyz`
+
+3. Team restored 2 USB devices (Sandisk 3.2Gen1 & Toshiba External USB 3.0) at the leader's place. What is the file system of these 2 USB devices?
+    - Format: `FileSystem1_FileSystem2` (All in caps)
+
+4. Team found some traces of Voice Modulator, How much time did the user actively used this Voice Modulator?
+    - Answer in `X` Seconds.
+
+Note:
+- Wrap the answers around inctf{}.
+- Sample Flag: `inctf{T0A0A0A0A0A_U0A0A0A0A0_abcxyz_FileSystem1_FileSystem2_X}`
+- The challenge file is same as that of Heist challenge.
+- Flag is Case Sensitive
+
+Challenge Author: [g4rud4](https://twitter.com/_Nihith)
+
+**Official WriteUp**
+
+1. We can go through **000004.log** file present in `Users/Danial Benjamin/AppData/Roaming/Slack/Local Storage/leveldb/000004.log`. We will get,
+    + Workspace ID: T027GM97WJ3
+    + USER ID: U027XK55WCT
+2. AnyDesk stores the wallpaper present on the remote PC as a thumbnail. We can get the thumbnail by checking out this folder `Users/Danial Benjamin/AppData/Roaming/AnyDesk/thumbnails`.
+    + First and last 3 characters: `a27da2`.
+3. Decoding the hex present in Vbr0 present in `Microsoft-Windows-Partition-Diagnostic.evtx`.
+    + `FAT32_NTFS`
+4. We find the duration of how much time the user used a particular application from ActivityCache.db present at `C:\Users\%profile name%\AppData\Local\ConnectedDevicesPlatform\%profile name%\`.
+    + We will see 4 instances of Voicemod used at different intervals. Adding all the active durations we get `800`.
+
+Flag: inctf{T027GM97WJ3_U027XK55WCT_a27da2_FAT32_NTFS_800}
+
+## Heist Ends
+
+**Challenge**
+
+Description
+
+Our IB team recovered a mobile phone from one of the members of the gang. Can you help out the team in finding answers for the following questions?
+
+Questions:
+
+1. When did the Professor create the note for Rio?
+     - Answer in `DD-MM-YYYY_HH:MM:SS`. Timestamp in UTC
+
+2. Where did Professor and Rio, planned to meet for planning the heist?
+     - Format: `Lat_Long` (round-off to 3 decimals)
+
+3. When did Rio plan to meet Professor?
+    - Answer in `DD-MM-YYYY_HH:MM:SS`. (In original timezone)
+
+4. How many members did Rio gathered for the heist?
+    - Format: `N` (Integer)
+
+5. How many tasks did Rio created in planning the heist, and how many did he complete?
+     - Format: `Created_Completed` in Integers
+
+6. There is a secret code present in a document shared between Rio & Professor, can you find out what it is?
+    - Format: `AB1234578PMFE`
+
+7. We found a game installed on the device. When did Rio first open this game?
+    - Answer in `DD-MM-YYYY_HH:MM:SS` in UTC
+
+Note:
+- Wrap the flag around inctf{}
+- Sample flag: `inctf{01-01-2012_14:01:16_1.111_2.- 222_01-01-2012_14:01:00_1_0_0_AB1234578PMFE_01-01-2012_14:01:00}`
+- Flag is Case Sensitive
+
+Challenge Download Links:
+- [Primary Link](https://drive.google.com/file/d/1hLgFoXYQA-brR8ucAKJa3lCRx94XXXRD/view?usp=sharing)
+- [Mirror Link](https://amritauniv-my.sharepoint.com/:u:/g/personal/inctfj_am_amrita_edu/Ecfnrp8zcZdHsd-7PhCaP1ABxCZBo2qOPNM7AGQL1WnGhw?e=gBhDIA)
+
+MD5 Hash: `Heist_ends.zip 28EB446FB1A2D3B408CBCCAFBBFBA86D`
+
+Challenge Author: [g4rud4](https://twitter.com/_Nihith)
+
+**Official WriteUp**
+
+1. 2021-07-19_12:28:39 UTC (from keep.db)
+2. 13.106_80.225 (From Slack messages or Google Tasks, https://goo.gl/maps/iDmTQoZgrZae95JL6)
+3. 20-07-2021_15:30:00 (from slack messages(`SELECT datetime(ts, 'unixepoch'), json_extract(message_json,'$.text') AS INmessages from messages order by ts;`) or Google Tasks)
+4. 11 (From slack messages)
+5. 4_3 (from Tasks table in \data\data\com.google.android.apps.tasks\files\tasks-109039317116448576167\data.db)
+6. We can find it in Google docs cache. Need to change the file extension and we will get the first page of the document.
+  Location: data\data\com.google.android.apps.docs\cache\docs_glide\data\af91c7f5acecd5cc087896b2f11bef832af1aebbe98e6327aa9983799c2014d9
+  We get "MintMMCT15AUG"
+7. Game installed is Dr. Driving.
+    First Open Time: \data\data\com.ansangha.drdriving\shared_prefs\com.google.android.gms.measurement.prefs
+    We get: 1626782629126 -> July 20, 2021 12:03:49
+
+Flag: inctf{19-07-2021_12:28:39_13.108_80.225_20-07-2021_21:00:00_11_4_3_MintMMCT15AUG_20-07-2021_12:03:49}
