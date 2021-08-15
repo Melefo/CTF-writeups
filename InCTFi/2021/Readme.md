@@ -13,6 +13,13 @@ InCTF International is a premier hacking event targeted at hackers of all ages, 
 | [Baby Glob](#baby-glob) | Pwn | 993 | 5 | ❌ | ❌ | ❌ | ❔ |
 | [DeadlyFastGraph](#deadlyfastgraph) | Pwn | 996 | 4 | ❌ | ❌ | ❌ | ❕ |
 | [MultiStorage](#multistorage) | Pwn | 1000 | 1 | ❌ | ❌ | ❌ | ❔ |
+| [Right Now Generator](#right-now-generator) | Crypto | 100 | 51 | ❌ | ❌ | ❌ | ❔ |
+| [Lost Baggage](#lost-baggage) | Crypto | 100 | 52 | ❌ | ❌ | ❌ | ❔ |
+| [Gold_digger](#golddigger) | Crypto | 100 | 76 | ❌ | ❌ | ❌ | ❔ |
+| [Eazy Xchange](#eazy-xchange) | Crypto | 179 | 44 | ❌ | ❌ | ❌ | ❔ |
+| [Encrypted Operations](#encrypted-operations) | Crypto | 823 | 21 | ❌ | ❌ | ❌ | ❔ |
+| [Trouble With Pairs](#trouble-with-pairs) | Crypto | 925 | 14 | ❌ | ❌ | ❌ | ❔ |
+| [Tabula Recta](#tabula-recta) | Crypto | 996 | 4 | ❌ | ❌ | ❌ | ❔ |
 
 ---
 
@@ -205,3 +212,90 @@ Author: [3agl3](https://twitter.com/3agl31)
 </details>
 
 [handout.zip](./MultiStorage.zip)
+
+## Right Now Generator
+
+**Challenge**
+
+I just made the fastest RNG! No one can predict my machine.
+
+Author : [Majin#6223](https://twitter.com/Alekh_Avinash)
+
+[source.zip](./Right_Now_Generator.zip)
+
+## Lost Baggage
+
+**Challenge**
+
+It seems I'm out of luck I just lost my bag the the airport. Can u help me find it?
+
+Author : [Majin#6223](https://twitter.com/Alekh_Avinash)
+
+[ori.zip](./Lost_Baggage.zip)
+
+## Gold_digger
+
+**Challenge**
+
+Break the cipher and prove your worth!
+
+[handout.txt](./Gold_digger.txt) [gold_digger.py](./gold_digger.py)
+
+## Eazy Xchange
+
+**Challenge**
+
+My older brother found a new way to implement the DH Key Exchange. I tried my best to recreate his method. Hope I didn't make a mistake...
+
+MD5 Hash: `src.zip 677edcba5b74a91d090abb46cfffb095`
+
+Author : [Majin#6223](https://twitter.com/Alekh_Avinash)
+
+[src.zip](./Eazy_Xchange.zip)
+
+## Encrypted Operations
+
+**Challenge**
+
+Lets see how good you are at performing blind operations :)
+
+> NOTE:
+> To solve the challenge installation of pallisade or running the challenge files is not a necessity, analysing level.cpp code with pen and paper is enough!
+
+MD5 Hash: `src.zip 93c7534260c4c76a95b5c6bb6775626d`
+
+NOTE: flag format is inctfi{}
+
+Author [Stryd3r](https://twitter.com/The_Str1d3r)
+
+`nc crypto.challenge.bi0s.in 1221`
+
+[src.zip](./Encrypted_Operations.zip)
+
+## Trouble With Pairs
+
+**Challenge**
+
+We are testing a new Optimised Signature scheme for Authentication in our Voting System.
+
+This might lead us to reduce the time taken for Election Process.
+
+Author : [chandu-kona](https://twitter.com/chandu_kona)
+
+`nc crypto.challenge.bi0s.in 1337`
+
+[Handout.zip](./Trouble_With_Pairs.zip)
+
+## Tabula Recta
+
+X made a stateless password manager and used it for all the top sites he visited. But on observing the code he found that his key could retrieve a maximum number of states and decided to not use it because of its weaknesses.
+
+However, he did not get to reset all of his passwords.
+
+We'll send you the names of some websites at `nc 34.106.211.122 1222`. If you are able to find most of the passwords, we'll give you the flag.
+
+MD5sum : `072419cd201a7964c19a7177af1ec090 src.zip`
+
+Author : [ph03n1x](https://twitter.com/MeenakshiSl1), [4lex1](https://twitter.com/SandhraBino)
+
+[src.zip](Tabula_Recta.zip)
