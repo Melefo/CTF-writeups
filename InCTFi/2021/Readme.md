@@ -30,6 +30,12 @@ InCTF International is a premier hacking event targeted at hackers of all ages, 
 | [The Big Score](#the_big_score) | Forensics | 956 | 11 | ❌ | ❌ | ❌ | ❕ |
 | [Heist Continues](#heist_continues) | Forensics | 984 | 7 | ❌ | ❌ | ❌ | ❕ |
 | [Heist Ends](#heist_ends) | Forensics | 989 | 6 | ❌ | ❌ | ❌ | ❕ |
+| [find_plut0](#findplut0) | Reverse | 100 | 116 | ❌ | ❌ | ❌ | ❔ |
+| [REplica](#Rreplica) | Reverse | 723 | 26 | ❌ | ❌ | ❌ | ❔ |
+| [Miz](#miz) | Reverse | 723 | 26 | ❌ | ❌ | ❌ | ❔ |
+| [flagchecker](#flagchecker) | Reverse | 887 | 17 | ❌ | ❌ | ❌ | ❔ |
+| [Noodes](#noodes) | Reverse | 900 | 16 | ❌ | ❌ | ❌ | ❔ |
+| [Adventures of Lonely Knight (PART-1)](#adventures-of-lonely-knight-part-1) | Reverse | 936 | 13 | ❌ | ❌ | ❌ | ❔ |
 
 ---
 
@@ -628,3 +634,67 @@ Challenge Author: [g4rud4](https://twitter.com/_Nihith)
     We get: 1626782629126 -> July 20, 2021 12:03:49
 
 Flag: inctf{19-07-2021_12:28:39_13.108_80.225_20-07-2021_21:00:00_11_4_3_MintMMCT15AUG_20-07-2021_12:03:49}
+
+## find_plut0
+
+**Challenge**
+
+Find pluto , and get your Reward !!
+
+Author: [bl4ck_Widw](https://twitter.com/N4m1th4_01)
+
+`nc 34.94.181.140 4205`
+
+[chall](./find_plut0)
+
+## REplica
+
+**Challenge**
+
+Replication is the new thing.
+
+Author: k4iz3n
+
+[main_replica](./REplica)
+
+## Miz
+
+**Challenge**
+
+Senpai plis find me a way.
+
+Author: Freakston, silverf3lix
+
+`nc 34.94.181.140 4200`
+
+[miz](./miz)
+
+## flagchecker
+
+**Challenge**
+
+Enter the correct flag with flag format.
+
+Author: imm0rt4l_5t4rk
+
+[flagchecker](./flagchecker)
+
+## Noodes
+
+**Challenge**
+
+I noodes
+
+Author: r3x
+
+`nc 34.94.181.140 4210`
+
+[ialert](./Noodes)
+
+## Adventures of Lonely Knight (PART-1)
+
+A lonely adventure of loney knight fighting mobs, there might be a secret in the end.
+
+Author: [fug1tive](https://twitter.com/fug1t1v31)
+
+[full_game.nes](./full_game.nes)
