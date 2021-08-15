@@ -27,9 +27,9 @@ InCTF International is a premier hacking event targeted at hackers of all ages, 
 | [Ermittlung](#ermittlung) | Forensics | 140 | 45 | ❌ | ❌ | ❌ | ❕ |
 | [Darkness](#darkness) | Forensics | 887 | 17 | ❌ | ❌ | ❌ | ❕ |
 | [Heist](#heist) | Forensics | 913 | 15 | ❌ | ❌ | ❌ | ❕ |
-| [The Big Score](#the_big_score) | Forensics | 956 | 11 | ❌ | ❌ | ❌ | ❕ |
-| [Heist Continues](#heist_continues) | Forensics | 984 | 7 | ❌ | ❌ | ❌ | ❕ |
-| [Heist Ends](#heist_ends) | Forensics | 989 | 6 | ❌ | ❌ | ❌ | ❕ |
+| [The Big Score](#the_big-score) | Forensics | 956 | 11 | ❌ | ❌ | ❌ | ❕ |
+| [Heist Continues](#heist-continues) | Forensics | 984 | 7 | ❌ | ❌ | ❌ | ❕ |
+| [Heist Ends](#heist-ends) | Forensics | 989 | 6 | ❌ | ❌ | ❌ | ❕ |
 | [find_plut0](#findplut0) | Reverse | 100 | 116 | ❌ | ❌ | ❌ | ❔ |
 | [REplica](#Rreplica) | Reverse | 723 | 26 | ❌ | ❌ | ❌ | ❔ |
 | [Miz](#miz) | Reverse | 723 | 26 | ❌ | ❌ | ❌ | ❔ |
@@ -38,11 +38,11 @@ InCTF International is a premier hacking event targeted at hackers of all ages, 
 | [Adventures of Lonely Knight (PART-1)](#adventures-of-lonely-knight-part-1) | Reverse | 936 | 13 | ❌ | ❌ | ❌ | ❔ |
 | [MD Notes](#md_notes) | Web | 100 | 46 | ❌ | ❌ | ❌ | ❕ |
 | [Raas](#raas) | Web | 100 | 73 | ❌ | ❌ | ❌ | ❕ |
-| [Vuln Drive](#vuln_drive) | Web | 700 | 27 | ❌ | ❌ | ❌ | ❕ |
-| [Json Analyser](#json_analyser) | Web | 804 | 22 | ❌ | ❌ | ❌ | ❕ |
-| [Notepad 1 - Snakehole's Secret](#notepad_1__snakeholes_secret) | Web | 823 | 21 | ❌ | ❌ | ❌ | ❕ |
-| [Notepad 1.5 - Arthur's Article](#notepad_15__arthurs_article) | Web | 900 | 16 | ❌ | ❌ | ❌ | ❕ |
-| [Notepad 2 - Ken's Chronicle](#notepad_2__kens_chronicle) | Web | 925 | 14 | ❌ | ❌ | ❌ | ❕ |
+| [Vuln Drive](#vuln-drive) | Web | 700 | 27 | ❌ | ❌ | ❌ | ❕ |
+| [Json Analyser](#json-analyser) | Web | 804 | 22 | ❌ | ❌ | ❌ | ❕ |
+| [Notepad 1 - Snakehole's Secret](#notepad-1-snakeholes-secret | Web | 823 | 21 | ❌ | ❌ | ❌ | ❕ |
+| [Notepad 1.5 - Arthur's Article](#notepad-15-arthurs-article) | Web | 900 | 16 | ❌ | ❌ | ❌ | ❕ |
+| [Notepad 2 - Ken's Chronicle](#notepad-2-kens-chronicle) | Web | 925 | 14 | ❌ | ❌ | ❌ | ❕ |
 
 ---
 
