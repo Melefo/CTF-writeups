@@ -4,38 +4,38 @@ This 24-hour CTF has 30 challenges, and it is the first stage of "CTF Internacio
 
 ## Overview
 
-| Title | Category | Points | Submitted | Solution | Flag |
-|-------|----------|--------|-----------|----------|------|
-|[A simple challenge](#a-simple-challenge) | Crypto | 100 | ✔️ | ✔️ | ✔️ |
-|[Roman encryption](#roman-encryption) | Crypto | 100 | ✔️ | ✔️ | ✔️ |
-|[Hextraordinary security](#hextraordinary-security)| Crypto | 100 | ✔️ | ✔️ | ✔️ |
-|[Some type of juggling](#some-type-of-juggling)| Web | 100 | ✔️ | ✔️ | ❌ |
-|[Exclusive access](#exclusive-access)| Web | 100 | ✔️ | ❌ | ❌ |
-|[It is Magic after all](#it-is-magic-after-all)| Web | 100 | ✔️ | ✔️ | ❌ |
-|[You are not allowed](#you-are-not-allowed)| Reverse Engineering | 100 | ✔️ | ✔️ | ✔️ |
-|[Well hello there](#well-hello-there)| Pwn | 100 | ✔️ | ✔️ | ❌ |
-|[Welcome to Lisbon!](#welcome-to-lisbon) | OSINT | 100 | ✔️ | ✔️ | ✔️ |
-|[Hiding in plain sight](#hiding-in-plain-sight) | Forensics | 100 | ✔️ | ✔️ | ✔️ |
-|[Welcome to the challenge](#welcome-to-the-challenge) | Forensics | 100 | ✔️ | ✔️ | ✔️ |
-|[About us](#about-us) | Forensics | 100 | ✔️ | ✔️ | ✔️ |
-|[Keyp it universal](#keyp-it-universal) | Forensics | 100 | ✔️ | ✔️ | ✔️ |
-|[Maybe the helper can help](#maybe-the-helper-can-help) | Forensics | 100 | ❌ | ✔️ | ✔️ |
-|[Where did agent rooot login from](#Where-did-agent-rooot-login-from) | Forensics | 449 | ❌ | ❌ | ❌ |
-|[Knock Knock](#knock-knock) | Network | 100 | ✔️ | ✔️ | ✔️ |
-|[The lost Jetson](#the-lost-jetson) | Network | 400 | ✔️ | ✔️ | ✔️ |
-|[Vacation time!](#vacation-time) | Network | 464 | ✔️ | ✔️ | ✔️ |
-|[Oh there's another flag](#oh-theres-another-flag) | Misc | 430 | ✔️ | ✔️ | ✔️ |
-|[Judy also has a flag](#judy-also-has-a-flag) | Misc | 464 | ❌ | ❌ | ❌ |
-|[Where in the world is](#where-in-the-world-is) | Misc | 469 | ❌ | ❌ | ❌ |
-|[Decrypting the payload](#decrypting-the-payload) | Mission | 100 | ✔️ | ✔️ | ✔️ |
-|[Locked outside](#locked-outside) | Mission | 100 | ✔️ | ✔️ | ✔️ |
-|[Something Suspicious](#something-suspicious) | Mission | 100 | ✔️ | ✔️ | ✔️ |
-|[Changing our locks and dumping old keys](#changing-our-locks-and-dumping-old-keys) | Mission | 100 | ✔️ | ✔️ | ✔️ |
-|[Know your enemy](#know-your-enemy) | Mission | 191 | ✔️ | ❌ | ❌ |
-|[Blue team becomes Red Team](#blue-team-becomes-red-team) | Mission | 269 | ✔️ | ❌ | ❌ |
-|[Getting the crown jewels](#getting-the-crown-jewels) | Mission | 269 | ✔️ | ❌ | ❌ |
-|[Locating our Attacker](#locating-our-attacker) | Mission | 443 | ❌ | ❌ | ❌ |
-|[Crime doesnt' pay](#crime-doesnt-pay) | Mission | 481 | ❌ | ❌ | ❌ |
+| Title | Category | Points | Sovles | Submitted | Solution | Flag |
+|-------|----------|--------|--------|-----------|----------|------|
+|[A simple challenge](#a-simple-challenge) | Crypto | 100 | 309 | ✔️ | ✔️ | ✔️ |
+|[Roman encryption](#roman-encryption) | Crypto | 100 | 189 | ✔️ | ✔️ | ✔️ |
+|[Hextraordinary security](#hextraordinary-security)| Crypto | 100 | 247 | ✔️ | ✔️ | ✔️ |
+|[Some type of juggling](#some-type-of-juggling)| Web | 100 | 249 | ✔️ | ✔️ | ❌ |
+|[Exclusive access](#exclusive-access)| Web | 100 | 264 | ✔️ | ❌ | ❌ |
+|[It is Magic after all](#it-is-magic-after-all)| Web | 100 | 174 | ✔️ | ✔️ | ❌ |
+|[You are not allowed](#you-are-not-allowed)| Reverse Engineering | 100 | 242 | ✔️ | ✔️ | ✔️ |
+|[Well hello there](#well-hello-there)| Pwn | 100 | 237 | ✔️ | ✔️ | ❌ |
+|[Welcome to Lisbon!](#welcome-to-lisbon) | OSINT | 100 | 173 | ✔️ | ✔️ | ✔️ |
+|[Hiding in plain sight](#hiding-in-plain-sight) | Forensics | 100 | 299 | ✔️ | ✔️ | ✔️ |
+|[Welcome to the challenge](#welcome-to-the-challenge) | Forensics | 100 | 197 | ✔️ | ✔️ | ✔️ |
+|[About us](#about-us) | Forensics | 100 | 228 | ✔️ | ✔️ | ✔️ |
+|[Keyp it universal](#keyp-it-universal) | Forensics | 100 | 145 | ✔️ | ✔️ | ✔️ |
+|[Maybe the helper can help](#maybe-the-helper-can-help) | Forensics | 100 | 98 | ❌ | ✔️ | ✔️ |
+|[Where did agent rooot login from](#Where-did-agent-rooot-login-from) | Forensics | 449 | 19 | ❌ | ❌ | ❌ |
+|[Knock Knock](#knock-knock) | Network | 100 | 93 | ✔️ | ✔️ | ✔️ |
+|[The lost Jetson](#the-lost-jetson) | Network | 400 | 26 | ✔️ | ✔️ | ✔️ |
+|[Vacation time!](#vacation-time) | Network | 464 | 16 | ✔️ | ✔️ | ✔️ |
+|[Oh there's another flag](#oh-theres-another-flag) | Misc | 430 | 22 | ✔️ | ✔️ | ✔️ |
+|[Judy also has a flag](#judy-also-has-a-flag) | Misc | 464 | 16 | ❌ | ❌ | ❌ |
+|[Where in the world is](#where-in-the-world-is) | Misc | 469 | 15 | ❌ | ❌ | ❌ |
+|[Decrypting the payload](#decrypting-the-payload) | Mission | 100 | 115 | ✔️ | ✔️ | ✔️ |
+|[Locked outside](#locked-outside) | Mission | 100 | 66 | ✔️ | ✔️ | ✔️ |
+|[Something Suspicious](#something-suspicious) | Mission | 100 | 203 | ✔️ | ✔️ | ✔️ |
+|[Changing our locks and dumping old keys](#changing-our-locks-and-dumping-old-keys) | Mission | 100 | 56 | ✔️ | ✔️ | ✔️ |
+|[Know your enemy](#know-your-enemy) | Mission | 191 | 45 | ✔️ | ❌ | ❌ |
+|[Blue team becomes Red Team](#blue-team-becomes-red-team) | Mission | 269 | 39 | ✔️ | ❌ | ❌ |
+|[Getting the crown jewels](#getting-the-crown-jewels) | Mission | 269 | 39 | ✔️ | ❌ | ❌ |
+|[Locating our Attacker](#locating-our-attacker) | Mission | 443 | 20 | ❌ | ❌ | ❌ |
+|[Crime doesnt' pay](#crime-doesnt-pay) | Mission | 481 | 12 | ❌ | ❌ | ❌ |
 
 I'm sorry for the missing flags and solutions it was my first CTF and I didn't record my attempts or saved anything. I've done this ReadMe by memory...
 
@@ -254,7 +254,7 @@ Done! We have our flag "`flag{1ntr0_t0_r3v3rs3_3ng1n33r1ng}`"
 
 We initiated the development of a bot. So far it greets you by your name. Can you test it?
 
-Access: nc challenges.defsoc.tk 22228
+Access: `nc challenges.defsoc.tk 22228`
 
 Flag format: flag{string}
 

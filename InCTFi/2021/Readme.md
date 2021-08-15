@@ -2,10 +2,17 @@
 
 InCTF International is a premier hacking event targeted at hackers of all ages, and as always, we will be carefully moulding challenges, loaded with the latest vulnerabilities, responsibly innovating to help you stay current and have an enjoyable time and experience.
 
-| Title | Category | Points | Submitted | Solution | Official WriteUp | Flag |
-|-------|----------|--------|-----------|----------|------------------|------|
-| Sanity Check | Misc | 10 | ✔️ | ✔️ | ❌ | ✔️ |
-| Alpha Pie | Misc | 100 | ✔️ | ✔️ | ❌ | ✔️ |
+| Title | Category | Points | Solves | Submitted | Solution | Flag | Official WriteUp |
+|-------|----------|--------|--------|-----------|----------|------------------|------|
+| [Sanity Check](#sanity-check) | Misc | 10 | 552 | ✔️ | ✔️ | ✔️ | ❔ |
+| [Alpha Pie](#alpha-pie) | Misc | 100 | 58 | ✔️ | ✔️ | ✔️ | ❔ |
+| [blackStab Cloud Services](#blackstab-cloud-services) | Misc | 1000 | 2 | ❌ | ❌ | ❌ | ✔️ |
+| [Ancient_House](#ancienthouse) | Pwn | 545 | 33 | ❌ | ❌ | ❌ | ❔ |
+| [Node Keeper](#node-keeper) | Pwn | 925 | 14 | ❌ | ❌ | ❌ | ❔ |
+| [Kqueue](#kqueue) | Pwn | 984 | 7 | ❌ | ❌ | ❌ | ❔ |
+| [Baby Glob](#baby-glob) | Pwn | 993 | 5 | ❌ | ❌ | ❌ | ❔ |
+| [DeadlyFastGraph](#deadlyfastgraph) | Pwn | 996 | 4 | ❌ | ❌ | ❌ | ❕ |
+| [MultiStorage](#multistorage) | Pwn | 1000 | 1 | ❌ | ❌ | ❌ | ❔ |
 
 ---
 
@@ -31,7 +38,7 @@ We have created a mini game to test your skills. Go grab the flag!!
 
 authors : careless_finch, malf0y
 
-nc misc.challenge.bi0s.in 1337
+`nc misc.challenge.bi0s.in 1337`
 
 **Solution**
 
@@ -87,3 +94,114 @@ Credits to Ryan Collingwood and Nicholas Swift for their A-Star algorithm: [asta
 You can find my full game here: [alphapie.txt](./alphapie.txt)
 
 Done! We have our flag "`inctf{G00d_Job_e33ac7bae54893252e60c0187e793ef5d13d7dfa85fafa7984f8753b591247b9}`"
+
+## blackStab Cloud Services
+
+**Challenge**
+
+Presenting you, blackStab Cloud Services a secure VM provider which lets you spawn your own VMs on the cloud with your favorite OS (may it be Arch or even Windows)
+
+Note: On the occasion of inaguration, we're giving out 1000$ worth blackStab cloud credits for new users!!
+
+Author: [f4lc0n](https://twitter.com/theevilsyn)
+
+`misc.challenge.bi0s.in:1133`
+
+[blackstab.zip](./blackstab.zip)
+
+**Official WriteUp**
+
+[Google Slides](
+https://docs.google.com/presentation/d/1PrApTgj9wM3Z0No-hNXaMlsiNSy7o0GINlRI95pjkak/edit?usp=sharing)
+
+## Ancient_House
+
+**Challenge**
+
+Someone's gotta stop those glibc nerds
+
+The challenge runs the DEBUG build of jemalloc
+
+Author : [Pwn-Solo](https://twitter.com/Pwn_Solo)
+
+`nc pwn.challenge.bi0s.in 1230`
+
+[Handout.zip](./Ancient_House.zip)
+
+## Node Keeper
+
+**Challenge**
+
+Author: [3agl3](https://twitter.com/3agl31)
+
+`nc pwn.challenge.bi0s.in 1234`
+
+[handout.zip](./Node_Keeper.zip)
+
+## Kqueue
+
+**Challenge**
+
+A long queue awaits you in ring0.
+
+md5sum : bzImage - `d7c173966e9fb6e79eaef8d351cb8f09` : kqueue.ko - `702ab39064a7b4ee1d33f7c484eeb77a`
+
+Author - [Cyb0rG](https://twitter.com/_Cyb0rG)
+
+username : password - `ctf:kqueue`
+
+`nc pwn.challenge.bi0s.in 1279`
+
+[Handout.zip](./Kqueue.zip)
+
+## Baby Glob
+
+**Challenge**
+
+Super secure path finder from your own 2017.
+
+md5sum : chall - `60aedc6cf9a7b163254cfc2ffea64c04`
+
+Note - Standard `ubuntu 20.04` docker has been used.
+
+Author - [Cyb0rG](https://twitter.com/_Cyb0rG)
+
+`nc pwn.challenge.bi0s.in 1299`
+
+[Handout.zip](./Baby_Glob.zip)
+
+## DeadlyFastGraph
+
+**Challenge**
+
+I decided that DFG wasn't fast enough.
+
+Author: [DarkKnight](https://twitter.com/_d4rkkn1gh7)
+
+`nc pwn.challenge.bi0s.in 1212`
+
+[DFGHandout.zip](./DFGHandout.zip) [DFGServer.zip](./DFGServer.zip)
+
+**Official WriteUp**
+
+Exploit:
+[GitHub gist](https://gist.github.com/d4rk-kn1gh7/9bcd1d49dc07f05c371603fb4b96a651)
+
+`Full writeup coming soon :)`
+
+## MultiStorage
+
+**Challenge**
+
+You can now store two types of data in kernel.
+
+Author: [3agl3](https://twitter.com/3agl31)
+
+`nc pwn.challenge.bi0s.in 1235`
+
+<details>
+<summary>Hint</summary>
+<p>Functions that may look irrelevant might have bigger affect than you think!</p>
+</details>
+
+[handout.zip](./MultiStorage.zip)

@@ -29,4 +29,4 @@ I’m the only one doing CTFs in my group of friends right now, but maybe we’l
 |      CTF      |        Year \| Link       |                Scoreboard                 | Points |
 | ------------- | ---------------------- | ----------------------------------------- | ------ |
 | RCTS CERT CTF | [2021](RCTS_CERT/2021) | [18/372](https://ctftime.org/event/1420/) | 	3823  |
-| InCTFi | [2021](inCTF/2021) | [153/304](https://ctftime.org/event/1370) | 	110  |
+| InCTFi | [2021](inCTF/2021) | [153/604](https://ctftime.org/event/1370) | 	110  |
