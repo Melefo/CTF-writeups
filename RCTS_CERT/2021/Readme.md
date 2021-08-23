@@ -39,6 +39,8 @@ This 24-hour CTF has 30 challenges, and it is the first stage of "CTF Internacio
 
 I'm sorry for the missing flags and solutions it was my first CTF and I didn't record my attempts or saved anything. I've done this ReadMe by memory...
 
+You can find some official writeups [here](https://ctftime.org/event/1420/tasks/)
+
 ---
 
 ## A simple challenge
