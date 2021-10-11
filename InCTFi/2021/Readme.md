@@ -2,7 +2,7 @@
 
 InCTF International is a premier hacking event targeted at hackers of all ages, and as always, we will be carefully moulding challenges, loaded with the latest vulnerabilities, responsibly innovating to help you stay current and have an enjoyable time and experience.
 
-| Title | Category | Points | Solves | Submitted | Solution | Flag | Official WriteUp |
+| Title | Category | Points | Solves | Submitted | WriteUp | Flag | Official WriteUp |
 |-------|----------|--------|--------|-----------|----------|------------------|------|
 | [Sanity Check](#sanity-check) | Misc | 10 | 552 | ✔️ | ✔️ | ✔️ | ❔ |
 | [Alpha Pie](#alpha-pie) | Misc | 100 | 58 | ✔️ | ✔️ | ✔️ | ❕ |
@@ -44,10 +44,10 @@ InCTF International is a premier hacking event targeted at hackers of all ages, 
 | [Notepad 1.5 - Arthur's Article](#notepad-15-arthurs-article) | Web | 900 | 16 | ❌ | ❌ | ❌ | ✔️ |
 | [Notepad 2 - Ken's Chronicle](#notepad-2-kens-chronicle) | Web | 925 | 14 | ❌ | ❌ | ❌ | ✔️ |
 
----
 
 [❌ No WriteUp] [❔ Waiting for WriteUp] [❕ Short WriteUp] [✔️ Detailed WriteUp]
 
+---
 
 ## Sanity Check
 

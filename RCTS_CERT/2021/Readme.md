@@ -4,7 +4,7 @@ This 24-hour CTF has 30 challenges, and it is the first stage of "CTF Internacio
 
 ## Overview
 
-| Title | Category | Points | Sovles | Submitted | Solution | Flag |
+| Title | Category | Points | Solves | Submitted | WriteUp | Flag |
 |-------|----------|--------|--------|-----------|----------|------|
 |[A simple challenge](#a-simple-challenge) | Crypto | 100 | 309 | ✔️ | ✔️ | ✔️ |
 |[Roman encryption](#roman-encryption) | Crypto | 100 | 189 | ✔️ | ✔️ | ✔️ |
