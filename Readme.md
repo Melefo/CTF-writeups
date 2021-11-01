@@ -33,3 +33,4 @@ Names : Melefo | Moondo | DevilBox |Shiny Jigglypuff
 | pbctf | [2021](pbctf/2021) | [100/210](https://ctftime.org/event/1371) | 	290  |
 | Reply Cyber Security Challenge | [2021](Reply_Cyber_Security_Challenge/2021) | [316/424](https://ctftime.org/event/1436/) | 	200  |
 | BuckeyeCTF | [2021](BuckeyeCTF/2021) | [56/505](https://ctftime.org/event/1434) | 	1112  |
+| Killer Queen CTF | [2021](Killer_Queen/2021) | [???/???](https://ctftime.org/event/1482) | 	???  |
