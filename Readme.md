@@ -13,7 +13,7 @@ A CTF consist of participants inversigating, reverse engineering, breaking and a
 <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width=25> [GitHub mirror](https://github.com/Melefo/CTF-writeups)
 
 ## **Team**
-Names : Melefo | Moondo | DevilBox |Shiny Jigglypuff
+Names : Melefo | Moondo | DevilBox | Shiny Jigglypuff
 
 | <img src="https://github.com/melefo.png?size=150" /> | <img src="https://github.com/mllusar.png?size=150" /> |
 |:----------------------------------------------------:|:-----------------------------------------------------:|
@@ -33,4 +33,5 @@ Names : Melefo | Moondo | DevilBox |Shiny Jigglypuff
 | pbctf | [2021](pbctf/2021) | [100/210](https://ctftime.org/event/1371) | 	290  |
 | Reply Cyber Security Challenge | [2021](Reply_Cyber_Security_Challenge/2021) | [316/424](https://ctftime.org/event/1436/) | 	200  |
 | BuckeyeCTF | [2021](BuckeyeCTF/2021) | [56/505](https://ctftime.org/event/1434) | 	1112  |
-| Killer Queen CTF | [2021](Killer_Queen/2021) | [72/241](https://ctftime.org/event/1482) | 	3303  |
+| Killer Queen CTF | [2021](Killer_Queen/2021) | [74/251](https://ctftime.org/event/1482) | 	3303  |
+| INTENT CTF | [2021](INTENT/2021) | [??/??](https://ctftime.org/event/14542) | 	300  |
