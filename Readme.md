@@ -34,4 +34,5 @@ Names : Melefo | Moondo | DevilBox | Shiny Jigglypuff
 | Reply Cyber Security Challenge | [2021](Reply_Cyber_Security_Challenge/2021) | [316/424](https://ctftime.org/event/1436/) | 	200  |
 | BuckeyeCTF | [2021](BuckeyeCTF/2021) | [56/505](https://ctftime.org/event/1434) | 	1112  |
 | Killer Queen CTF | [2021](Killer_Queen/2021) | [74/251](https://ctftime.org/event/1482) | 	3303  |
-| INTENT CTF | [2021](INTENT/2021) | [??/??](https://ctftime.org/event/14542) | 	300  |
+| INTENT CTF | [2021](INTENT/2021) | [42/89](https://ctftime.org/event/1454) | 	300  |
+| niteCTF | [2021](NITECTF/2021) | [49/331](https://ctftime.org/event/1449) | 	2238  |
