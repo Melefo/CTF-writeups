@@ -36,4 +36,4 @@ Names : Melefo | Moondo | DevilBox | Shiny Jigglypuff
 | Killer Queen CTF | [2021](Killer_Queen/2021) | [74/251](https://ctftime.org/event/1482) | 	3303  |
 | INTENT CTF | [2021](INTENT/2021) | [42/89](https://ctftime.org/event/1454) | 	300  |
 | niteCTF | [2021](niteCTF/2021) | [49/331](https://ctftime.org/event/1449) | 	2238  |
-| DiceCTF | [2022](diceCTF/2022) | [224/1127](hhttps://ctftime.org/event/1541) | 	229  |
+| DiceCTF | [2022](DiceCTF/2022) | [224/1127](https://ctftime.org/event/1541) | 	229  |
